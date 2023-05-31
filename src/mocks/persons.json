@@ -1,0 +1,323 @@
+{
+  "persons": [
+    {
+      "id": 0,
+      "name": "Sarah Johnson",
+      "role": "Project Manager",
+      "country":"Argentina",
+      "photo":"https://tailwindcss.com/_next/static/media/classic-utility-jacket.82031370.jpg",
+      "modality":"Todas",
+      "experience":"Sin experiencia",
+      "portfolio": {
+        "cloud_link": "https://www.example.com/sarah_portfolio",
+        "projects": [
+          {
+            "title": "Project A",
+            "description": "Aenean convallis semper sem, vitae pretium felis pellentesque non.",
+            "link": "https://www.example.com/projectA"
+          },
+          {
+            "title": "Project B",
+            "description": "Vivamus ac lacus et dolor gravida consequat.",
+            "link": "https://www.example.com/projectB"
+          }
+        ]
+      },
+      "favorite": false,
+      "has_badge": true,
+      "social_media": {
+        "github": "https://github.com/michael_smith",
+        "linkedin": "https://www.linkedin.com/in/michaelsmith"
+      },
+      "skills": ["Graphic Design", "Illustration", "Adobe Photoshop"]
+    },
+    {
+      "id": 1,
+      "name": "Michael Smith",
+      "role": "Data Scientist",
+      "country":"Argentina",
+      "photo":"https://aishlatino.com/wp-content/uploads/2021/11/que-tipo-de-persona-te-gustaria-ser-730x411-SP.jpg",
+      "modality":"Remoto",
+      "experience":"6 meses",
+      "portfolio": {
+        "cloud_link": "https://www.example.com/michael_portfolio",
+        "projects": [
+          {
+            "title": "Project X",
+            "description": "Nulla facilisi. Sed dapibus lacinia sem, id bibendum augue elementum id.",
+            "link": "https://www.example.com/projectX"
+          },
+          {
+            "title": "Project Y",
+            "description": "Donec malesuada erat nec risus ultrices fermentum.",
+            "link": "https://www.example.com/projectY"
+          }
+        ]
+      },
+      "favorite": true,
+      "has_badge": false,
+      "social_media": {
+        "github": "https://github.com/michael_smith",
+        "linkedin": "https://www.linkedin.com/in/michaelsmith"
+      },
+      "skills": ["Data Analysis", "Machine Learning", "Python"]
+    },
+    {
+      "id": 2,
+      "name": "Emily Davis",
+      "role": "Graphic Designer",
+      "country":"Argentina",
+
+      "photo":"https://aishlatino.com/wp-content/uploads/2021/11/que-tipo-de-persona-te-gustaria-ser-730x411-SP.jpg",
+      "modality":"Presencial",
+      "experience":"1 año",
+      "portfolio": {
+        "cloud_link": "https://www.example.com/emily_portfolio",
+        "projects": [
+          {
+            "title": "Project Z",
+            "description": "Maecenas fringilla, justo eu tempus semper, metus metus posuere dolor.",
+            "link": "https://www.example.com/projectZ"
+          },
+          {
+            "title": "Project W",
+            "description": "In faucibus lectus at eros congue, sit amet eleifend ante vestibulum.",
+            "link": "https://www.example.com/projectW"
+          }
+        ]
+      },
+      "favorite": false,
+      "has_badge": true,
+      "social_media": {
+        "github": "https://github.com/michael_smith",
+        "linkedin": "https://www.linkedin.com/in/michaelsmith"
+      },
+      "skills": ["Project Management", "Team Leadership", "Communication"]
+    },
+    {
+      "id": 3,
+      "name": "Emily Davis",
+      "role": "Graphic Designer",
+      "country":"Chile",
+
+      "photo":"https://aishlatino.com/wp-content/uploads/2021/11/que-tipo-de-persona-te-gustaria-ser-730x411-SP.jpg",
+      "modality":"Todas",
+      "experience":"Sin experiencia",
+      "portfolio": {
+        "cloud_link": "https://www.example.com/emily_portfolio",
+        "projects": [
+          {
+            "title": "Project Z",
+            "description": "Maecenas fringilla, justo eu tempus semper, metus metus posuere dolor.",
+            "link": "https://www.example.com/projectZ"
+          },
+          {
+            "title": "Project W",
+            "description": "In faucibus lectus at eros congue, sit amet eleifend ante vestibulum.",
+            "link": "https://www.example.com/projectW"
+          }
+        ]
+      },
+      "favorite": false,
+      "has_badge": true,
+      "social_media": {
+        "github": "https://github.com/michael_smith",
+        "linkedin": "https://www.linkedin.com/in/michaelsmith"
+      },
+      "skills": ["Project Management", "Team Leadership", "Communication"]
+    },
+    {
+      "id": 4,
+      "name": "Fernando Bartolomeo",
+      "role": "Graphic Designer",
+      "country":"Venezuela",
+
+      "photo":"https://aishlatino.com/wp-content/uploads/2021/11/que-tipo-de-persona-te-gustaria-ser-730x411-SP.jpg",
+      "modality":"Remoto",
+      "experience":"Sin experiencia",
+      "portfolio": {
+        "cloud_link": "https://www.example.com/emily_portfolio",
+        "projects": [
+          {
+            "title": "Project Z",
+            "description": "Maecenas fringilla, justo eu tempus semper, metus metus posuere dolor.",
+            "link": "https://www.example.com/projectZ"
+          },
+          {
+            "title": "Project W",
+            "description": "In faucibus lectus at eros congue, sit amet eleifend ante vestibulum.",
+            "link": "https://www.example.com/projectW"
+          }
+        ]
+      },
+      "favorite": false,
+      "has_badge": true,
+      "social_media": {
+        "github": "https://github.com/michael_smith",
+        "linkedin": "https://www.linkedin.com/in/michaelsmith"
+      },
+      "skills": ["Project Management", "Team Leadership", "Communication"]
+    },
+    {
+      "id": 5,
+      "name": "Emily Davis",
+      "role": "Graphic Designer",
+      "country":"Cuba",
+
+      "photo":"https://aishlatino.com/wp-content/uploads/2021/11/que-tipo-de-persona-te-gustaria-ser-730x411-SP.jpg",
+      "modality":"Presencial",
+      "experience":"Sin experiencia",
+      "portfolio": {
+        "cloud_link": "https://www.example.com/emily_portfolio",
+        "projects": [
+          {
+            "title": "Project Z",
+            "description": "Maecenas fringilla, justo eu tempus semper, metus metus posuere dolor.",
+            "link": "https://www.example.com/projectZ"
+          },
+          {
+            "title": "Project W",
+            "description": "In faucibus lectus at eros congue, sit amet eleifend ante vestibulum.",
+            "link": "https://www.example.com/projectW"
+          }
+        ]
+      },
+      "favorite": false,
+      "has_badge": true,
+      "social_media": {
+        "github": "https://github.com/michael_smith",
+        "linkedin": "https://www.linkedin.com/in/michaelsmith"
+      },
+      "skills": ["Project Management", "Team Leadership", "Communication"]
+    },
+    
+    {
+      "id": 6,
+      "name": "Emily Davis",
+      "role": "Graphic Designer",
+      "country":"Colombia",
+
+      "photo":"https://aishlatino.com/wp-content/uploads/2021/11/que-tipo-de-persona-te-gustaria-ser-730x411-SP.jpg",
+      "modality":"Todas",
+      "experience":"1 año",
+      "portfolio": {
+        "cloud_link": "https://www.example.com/emily_portfolio",
+        "projects": [
+          {
+            "title": "Project Z",
+            "description": "Maecenas fringilla, justo eu tempus semper, metus metus posuere dolor.",
+            "link": "https://www.example.com/projectZ"
+          },
+          {
+            "title": "Project W",
+            "description": "In faucibus lectus at eros congue, sit amet eleifend ante vestibulum.",
+            "link": "https://www.example.com/projectW"
+          }
+        ]
+      },
+      "favorite": true,
+      "has_badge": true,
+      "social_media": {
+        "github": "https://github.com/michael_smith",
+        "linkedin": "https://www.linkedin.com/in/michaelsmith"
+      },
+      "skills": ["Project Management", "Team Leadership", "Communication"]
+    },
+    {
+      "id": 7,
+      "name": "Daniel Wilson",
+      "role": "UI/UX Designer",
+      "country":"Bolivia",
+
+      "photo":"https://aishlatino.com/wp-content/uploads/2021/11/que-tipo-de-persona-te-gustaria-ser-730x411-SP.jpg",
+      "modality":"Todas",
+      "experience":"1 año",
+      "portfolio": {
+        "cloud_link": "https://www.example.com/daniel_portfolio",
+        "projects": [
+          {
+            "title": "Project M",
+            "description": "Fusce ullamcorper justo augue, sit amet congue nunc varius eu.",
+            "link": "https://www.example.com/projectM"
+          },
+          {
+            "title": "Project N",
+            "description": "Morbi interdum elit quis diam pulvinar, a aliquet ante viverra.",
+            "link": "https://www.example.com/projectN"
+          }
+        ]
+      },
+      "favorite": false,
+      "has_badge": false,
+      "social_media": {
+        "github": "https://github.com/michael_smith",
+        "linkedin": "https://www.linkedin.com/in/michaelsmith"
+      },
+      "skills": ["Graphic Design", "Illustration", "Adobe Photoshop"]
+    },
+    {
+      "id": 8,
+      "name": "Emily Davis",
+      "role": "Graphic Designer",
+      "country":"Venezuela",
+
+      "photo":"https://aishlatino.com/wp-content/uploads/2021/11/que-tipo-de-persona-te-gustaria-ser-730x411-SP.jpg",
+      "modality":"Remoto",
+      "experience":"6 meses",
+      "portfolio": {
+        "cloud_link": "https://www.example.com/emily_portfolio",
+        "projects": [
+          {
+            "title": "Project Z",
+            "description": "Maecenas fringilla, justo eu tempus semper, metus metus posuere dolor.",
+            "link": "https://www.example.com/projectZ"
+          },
+          {
+            "title": "Project W",
+            "description": "In faucibus lectus at eros congue, sit amet eleifend ante vestibulum.",
+            "link": "https://www.example.com/projectW"
+          }
+        ]
+      },
+      "favorite": false,
+      "has_badge": true,
+      "social_media": {
+        "github": "https://github.com/michael_smith",
+        "linkedin": "https://www.linkedin.com/in/michaelsmith"
+      },
+      "skills": ["Project Management", "Team Leadership", "Communication"]
+    },
+    {
+      "id": 9,
+      "name": "Emily Davis",
+      "role": "Graphic Designer",
+      "country":"Venezuela",
+
+      "photo":"https://aishlatino.com/wp-content/uploads/2021/11/que-tipo-de-persona-te-gustaria-ser-730x411-SP.jpg",
+      "modality":"Remoto",
+      "experience":"6 meses",
+      "portfolio": {
+        "cloud_link": "https://www.example.com/emily_portfolio",
+        "projects": [
+          {
+            "title": "Project Z",
+            "description": "Maecenas fringilla, justo eu tempus semper, metus metus posuere dolor.",
+            "link": "https://www.example.com/projectZ"
+          },
+          {
+            "title": "Project W",
+            "description": "In faucibus lectus at eros congue, sit amet eleifend ante vestibulum.",
+            "link": "https://www.example.com/projectW"
+          }
+        ]
+      },
+      "favorite": false,
+      "has_badge": true,
+      "social_media": {
+        "github": "https://github.com/michael_smith",
+        "linkedin": "https://www.linkedin.com/in/michaelsmith"
+      },
+      "skills": ["Project Management", "Team Leadership", "Communication"]
+    }
+  ]
+}

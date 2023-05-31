@@ -13,15 +13,15 @@ export default {
         victoria:{
           buttonPrimary: "#2563eb",
           buttonSecondary:"#598EF3",
-          heading: "#475569",
-          body:"#1e293b",
+          heading: "#1f2937",
+          body:"#111827",
           textPrimary:"#cbd5e1",
-          textSecondary: "#94a0af",
-          bgCardPrimary: "#334155",
-          bgCardSecondary: "#1e293b",
+          textSecondary: "#9ca3af",
+          bgCardPrimary: "#374151",
+          bgCardSecondary: "#1f2937",
           bodyText: "#62807e",
           icon: "#c7d3d2",
-          footer:"#0f1825"
+          footer:"#1f2937"
 
         }
       }

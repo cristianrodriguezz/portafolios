@@ -2,7 +2,7 @@
 
 const Header = () => {
   return (
-    <header className="p-2 bg-victoria-heading w-full flex justify-between sm:p-3 sm:pl-5 sm:pr-5">
+    <header className="p-2 bg-victoria-heading w-full flex justify-between sm:p-3 sm:pl-5 sm:pr-5 border-b border-victoria-bgCardPrimary">
       <div className="w-10 h-auto">
         <img src="https://cdn-icons-png.flaticon.com/128/23/23303.png" alt="LOGO" />
       </div>

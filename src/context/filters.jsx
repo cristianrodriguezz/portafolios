@@ -7,6 +7,8 @@ export const FiltersProvider = ({ children }) => {
     role: "all",
     country: "all",
     favorite: "none",
+    experience: "none",
+    modality: "none"
   })
   return (
     <FiltersContext.Provider

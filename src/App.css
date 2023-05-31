@@ -1,7 +1,6 @@
 
 .image-container input:checked ~ label > img {
   transform: scale(2,2);
+  transition: all 500ms all;
 
-  transition: all 500ms ease;
-  object-fit: contain;
 }

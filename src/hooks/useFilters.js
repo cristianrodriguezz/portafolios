@@ -8,7 +8,10 @@ export function useFilters() {
       return (
         (filters.country === "all" || person.country === filters.country) &&
         (filters.role === "all" || person.role === filters.role) &&
-        (filters.favorite === "none" || filters.favorite === person.favorite)
+        (filters.favorite === "none" || filters.favorite === person.favorite) &&
+        (filters.experience === "none" || filters.experience === person.experience) &&
+        (filters.modality === "none" || filters.modality === person.modality)
+        
       );
     });
   };

@@ -21,8 +21,8 @@ export default {
           bgCardSecondary: "#1f2937",
           bodyText: "#62807e",
           icon: "#c7d3d2",
-          footer:"#1f2937"
-
+          footer:"#1f2937",
+          important: "#93c5fd"
         }
       }
     },

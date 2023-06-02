@@ -1,0 +1,3120 @@
+{
+  "skills": [
+  {
+  "id": 1,
+  "value": "Python",
+  "label": "Python",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 2,
+  "value": "SQL",
+  "label": "SQL",
+  "skill_group": "Database Technology",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 4,
+  "value": "Machine Learning",
+  "label": "Machine Learning",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 5,
+  "value": "Hadoop",
+  "label": "Hadoop",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 6,
+  "value": "Data Analysis",
+  "label": "Data Analysis",
+  "skill_group": "General Skill",
+  "skill_category": "General Skill"
+  },
+  {
+  "id": 7,
+  "value": "Java",
+  "label": "Java",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 8,
+  "value": "Algorithm",
+  "label": "Algorithm",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 9,
+  "value": "Development",
+  "label": "Development",
+  "skill_group": "",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 11,
+  "value": "Data Scientist",
+  "label": "Data Scientist",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 12,
+  "value": "Data Mining",
+  "label": "Data Mining",
+  "skill_group": "General Skill",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 13,
+  "value": "Research",
+  "label": "Research",
+  "skill_group": "General Skill",
+  "skill_category": "General Skill"
+  },
+  {
+  "id": 14,
+  "value": "Management",
+  "label": "Management",
+  "skill_group": "General Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 15,
+  "value": "Data Science",
+  "label": "Data Science",
+  "skill_group": "",
+  "skill_category": "General Skill"
+  },
+  {
+  "id": 16,
+  "value": "SAS",
+  "label": "SAS",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 17,
+  "value": "Programming",
+  "label": "Programming",
+  "skill_group": "",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 19,
+  "value": "Database",
+  "label": "Database",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 20,
+  "value": "Spark",
+  "label": "Spark",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 21,
+  "value": "Testing",
+  "label": "Testing",
+  "skill_group": "",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 22,
+  "value": "Project Management",
+  "label": "Project Management",
+  "skill_group": "Soft Skill",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 23,
+  "value": "Security",
+  "label": "Security",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+
+  {
+  "id": 25,
+  "value": "AI",
+  "label": "AI",
+  "skill_group": "General Skill",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 28,
+  "value": "Agile",
+  "label": "Agile",
+  "skill_group": "Environment",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 29,
+  "value": "Automation",
+  "label": "Automation",
+  "skill_group": "General Skill",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 30,
+  "value": "Architecture",
+  "label": "Architecture",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 31,
+  "value": "MySQL",
+  "label": "MySQL",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 32,
+  "value": "C++",
+  "label": "C++",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 33,
+  "value": "TensorFlow",
+  "label": "TensorFlow",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 34,
+  "value": "Linux",
+  "label": "Linux",
+  "skill_group": "Operating System",
+  "skill_category": "Operating System"
+  },
+  {
+  "id": 35,
+  "value": "Amazon Web Services",
+  "label": "Amazon Web Services",
+  "skill_group": "Cloud Computing",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 36,
+  "value": "Hive",
+  "label": "Hive",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 37,
+  "value": "Oracle",
+  "label": "Oracle",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 38,
+  "value": "Big Data",
+  "label": "Big Data",
+  "skill_group": "General Skill",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 40,
+  "value": "Scala",
+  "label": "Scala",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 41,
+  "value": "Metrics",
+  "label": "Metrics",
+  "skill_group": "",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 42,
+  "value": "Networks",
+  "label": "Networks",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 44,
+  "value": "NoSQL",
+  "label": "NoSQL",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 45,
+  "value": "Data Modeling",
+  "label": "Data Modeling",
+  "skill_group": "General Skill",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 46,
+  "value": "Mathematics",
+  "label": "Mathematics",
+  "skill_group": "General Skill",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 47,
+  "value": "Tableau",
+  "label": "Tableau",
+  "skill_group": "Visualization",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 48,
+  "value": "Excel",
+  "label": "Excel",
+  "skill_group": "Spreadsheet",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 49,
+  "value": "Physics",
+  "label": "Physics",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 50,
+  "value": "Genetics",
+  "label": "Genetics",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 51,
+  "value": "JavaScript",
+  "label": "JavaScript",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 53,
+  "value": "Consulting",
+  "label": "Consulting",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 55,
+  "value": "Documentation",
+  "label": "Documentation",
+  "skill_group": "",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 56,
+  "value": "Pandas",
+  "label": "Pandas",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 57,
+  "value": "Data Warehouse",
+  "label": "Data Warehouse",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 58,
+  "value": "PostgreSQL",
+  "label": "PostgreSQL",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 59,
+  "value": "Perl",
+  "label": "Perl",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 60,
+  "value": "Scripts",
+  "label": "Scripts",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 62,
+  "value": "Deep Learning",
+  "label": "Deep Learning",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 63,
+  "value": "MATLAB",
+  "label": "MATLAB",
+  "skill_group": "Programming Language (Math/Stat)",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 64,
+  "value": "Data Collection",
+  "label": "Data Collection",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 65,
+  "value": "NumPy",
+  "label": "NumPy",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 66,
+  "value": "Scientific",
+  "label": "Scientific",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 67,
+  "value": "Teradata",
+  "label": "Teradata",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 68,
+  "value": "Extract Transform Load",
+  "label": "Extract Transform Load",
+  "skill_group": "General Skill",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 69,
+  "value": "Director",
+  "label": "Director",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 70,
+  "value": "Bash",
+  "label": "Bash",
+  "skill_group": "Scripting",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 71,
+  "value": "API",
+  "label": "API",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 72,
+  "value": "MongoDB",
+  "label": "MongoDB",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 75,
+  "value": "Predictive Analytics/Models",
+  "label": "Predictive Analytics/Models",
+  "skill_group": "General Skill",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 76,
+  "value": "Simulation",
+  "label": "Simulation",
+  "skill_group": "General Skill",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 77,
+  "value": "Julia",
+  "label": "Julia",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 78,
+  "value": "HTTP",
+  "label": "HTTP",
+  "skill_group": "Web interface",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 79,
+  "value": "Sales",
+  "label": "Sales",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 80,
+  "value": "PhD",
+  "label": "PhD",
+  "skill_group": "Credential",
+  "skill_category": "Credential"
+  },
+  {
+  "id": 81,
+  "value": "Redshift",
+  "label": "Redshift",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 82,
+  "value": "Business",
+  "label": "Business",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 83,
+  "value": "Libraries",
+  "label": "Libraries",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 84,
+  "value": "Business Intelligence",
+  "label": "Business Intelligence",
+  "skill_group": "General Skill",
+  "skill_category": "Business Intelligence & Reporting"
+  },
+  {
+  "id": 86,
+  "value": "Developer",
+  "label": "Developer",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 87,
+  "value": "Software Engineer",
+  "label": "Software Engineer",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 88,
+  "value": "C#",
+  "label": "C#",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 89,
+  "value": "Lifecycle",
+  "label": "Lifecycle",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 90,
+  "value": "Case",
+  "label": "Case",
+  "skill_group": "Development Tool",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 94,
+  "value": "Manager",
+  "label": "Manager",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 95,
+  "value": ".NET",
+  "label": ".NET",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 96,
+  "value": "Apache",
+  "label": "Apache",
+  "skill_group": "Web Server",
+  "skill_category": "Search & Data Managemebt"
+  },
+  {
+  "id": 97,
+  "value": "CRM",
+  "label": "CRM",
+  "skill_group": "Domain Knowledge",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 98,
+  "value": "Foundation",
+  "label": "Foundation",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 99,
+  "value": "HTML",
+  "label": "HTML",
+  "skill_group": "Web interface",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 100,
+  "value": "Pyspark",
+  "label": "Pyspark",
+  "skill_group": "Database Tecnology",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 101,
+  "value": "Scipy",
+  "label": "Scipy",
+  "skill_group": "Programming Language - Mathematical",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 102,
+  "value": "Scrum",
+  "label": "Scrum",
+  "skill_group": "Methodology",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 103,
+  "value": "UPS",
+  "label": "UPS",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 104,
+  "value": "Microsoft Azure",
+  "label": "Microsoft Azure",
+  "skill_group": "Cloud Computing",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 107,
+  "value": "Intern",
+  "label": "Intern",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 108,
+  "value": "CSS",
+  "label": "CSS",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 109,
+  "value": "Ruby",
+  "label": "Ruby",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 110,
+  "value": "SPSS",
+  "label": "SPSS",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 111,
+  "value": "Data",
+  "label": "Data",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 112,
+  "value": "Shell Scripting",
+  "label": "Shell Scripting",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 113,
+  "value": "Supply Chain",
+  "label": "Supply Chain",
+  "skill_group": "Domain Expertise",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 114,
+  "value": "Visualization",
+  "label": "Visualization",
+  "skill_group": "",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 115,
+  "value": "HBase",
+  "label": "HBase",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 116,
+  "value": "OLAP",
+  "label": "OLAP",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 117,
+  "value": "Pig",
+  "label": "Pig",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 118,
+  "value": "REST",
+  "label": "REST",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 119,
+  "value": "Cassandra",
+  "label": "Cassandra",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 120,
+  "value": "MapReduce",
+  "label": "MapReduce",
+  "skill_group": "Distributed Computing",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 121,
+  "value": "Marketing",
+  "label": "Marketing",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 122,
+  "value": "Recruiter",
+  "label": "Recruiter",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 123,
+  "value": "Risk Management",
+  "label": "Risk Management",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 124,
+  "value": "Exclude",
+  "label": "Exclude",
+  "skill_group": "Exclude",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 127,
+  "value": "Regression",
+  "label": "Regression",
+  "skill_group": "General Skill",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 130,
+  "value": "Keras",
+  "label": "Keras",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 132,
+  "value": "Hierarchical Modeling",
+  "label": "Hierarchical Modeling",
+  "skill_group": "Mathematical",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 134,
+  "value": "ASP",
+  "label": "ASP",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 136,
+  "value": "jQuery",
+  "label": "jQuery",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 137,
+  "value": "Git",
+  "label": "Git",
+  "skill_group": "Programming Tool",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 138,
+  "value": "Bayesian",
+  "label": "Bayesian",
+  "skill_group": "Statistical",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 139,
+  "value": "Cognos",
+  "label": "Cognos",
+  "skill_group": "Analytics tool",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 140,
+  "value": "Econometrics",
+  "label": "Econometrics",
+  "skill_group": "",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 141,
+  "value": "Embedded",
+  "label": "Embedded",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 142,
+  "value": "Hardware",
+  "label": "Hardware",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 143,
+  "value": "Hypothesis Testing",
+  "label": "Hypothesis Testing",
+  "skill_group": "Statistics",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 144,
+  "value": "Office",
+  "label": "Office",
+  "skill_group": "",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 145,
+  "value": "Solr",
+  "label": "Solr",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 146,
+  "value": "Supervision",
+  "label": "Supervision",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 147,
+  "value": "Google Cloud Platform",
+  "label": "Google Cloud Platform",
+  "skill_group": "Cloud Computing",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 148,
+  "value": "SOAP",
+  "label": "SOAP",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 150,
+  "value": "Claims",
+  "label": "Claims",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 151,
+  "value": "GIS",
+  "label": "GIS",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 152,
+  "value": "Operations",
+  "label": "Operations",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 156,
+  "value": "Data Engineering",
+  "label": "Data Engineering",
+  "skill_group": "General Skill",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 158,
+  "value": "Data Analyst",
+  "label": "Data Analyst",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 159,
+  "value": "Data Engineer",
+  "label": "Data Engineer",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 160,
+  "value": "Go",
+  "label": "Go",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 161,
+  "value": "Node.js",
+  "label": "Node.js",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 162,
+  "value": "Visual Basic",
+  "label": "Visual Basic",
+  "skill_group": "Programming Languauge",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 163,
+  "value": "Critical Thinking",
+  "label": "Critical Thinking",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 164,
+  "value": "Elasticsearch",
+  "label": "Elasticsearch",
+  "skill_group": "Search tools",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 165,
+  "value": "Image Analytics",
+  "label": "Image Analytics",
+  "skill_group": "AI",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 166,
+  "value": "Information Retrieval",
+  "label": "Information Retrieval",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 167,
+  "value": "IT",
+  "label": "IT",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 168,
+  "value": "SAP",
+  "label": "SAP",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 169,
+  "value": "Scikit-Learn",
+  "label": "Scikit-Learn",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 170,
+  "value": "Test-Driven Development",
+  "label": "Test-Driven Development",
+  "skill_group": "Methodology",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 171,
+  "value": "Wireless",
+  "label": "Wireless",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 173,
+  "value": "Cloud",
+  "label": "Cloud",
+  "skill_group": "Cloud Computing",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 175,
+  "value": "Master's Degree",
+  "label": "Master's Degree",
+  "skill_group": "Credential",
+  "skill_category": "Credential"
+  },
+  {
+  "id": 178,
+  "value": "HDFS",
+  "label": "HDFS",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 182,
+  "value": "Relational Database Management Systems",
+  "label": "Relational Database Management Systems",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 186,
+  "value": "Access",
+  "label": "Access",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 187,
+  "value": "BigQuery",
+  "label": "BigQuery",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 189,
+  "value": "Couchbase",
+  "label": "Couchbase",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 190,
+  "value": "DB2",
+  "label": "DB2",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 192,
+  "value": "Django",
+  "label": "Django",
+  "skill_group": "Development Tool",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 193,
+  "value": "Adtech",
+  "label": "Adtech",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 194,
+  "value": "Airlines",
+  "label": "Airlines",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 196,
+  "value": "Avionics",
+  "label": "Avionics",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 197,
+  "value": "Biostatistics",
+  "label": "Biostatistics",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 199,
+  "value": "Electronic Medical Record",
+  "label": "Electronic Medical Record",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 200,
+  "value": "Environmental",
+  "label": "Environmental",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 201,
+  "value": "Lead Generation",
+  "label": "Lead Generation",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 203,
+  "value": "Medical Clinic",
+  "label": "Medical Clinic",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 205,
+  "value": "Underwriting",
+  "label": "Underwriting",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 206,
+  "value": "Agile",
+  "label": "Agile",
+  "skill_group": "Environment",
+  "skill_category": "Environment"
+  },
+  {
+  "id": 213,
+  "value": "Data Architecture",
+  "label": "Data Architecture",
+  "skill_group": "General Skill",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 217,
+  "value": "Quantitative Analysis/Modeling",
+  "label": "Quantitative Analysis/Modeling",
+  "skill_group": "General Skill",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 222,
+  "value": "Visualization",
+  "label": "Visualization",
+  "skill_group": "General Skill",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 225,
+  "value": "Clustering",
+  "label": "Clustering",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 231,
+  "value": "Generalized Linear Model",
+  "label": "Generalized Linear Model",
+  "skill_group": "Mathematical",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 233,
+  "value": "Android",
+  "label": "Android",
+  "skill_group": "Platform",
+  "skill_category": "Operating System"
+  },
+  {
+  "id": 235,
+  "value": "Modeler",
+  "label": "Modeler",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 236,
+  "value": "Scientist",
+  "label": "Scientist",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 237,
+  "value": "C",
+  "label": "C",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 241,
+  "value": "PHP",
+  "label": "PHP",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 254,
+  "value": "Leadership",
+  "label": "Leadership",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 255,
+  "value": "Presentation Skills",
+  "label": "Presentation Skills",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 256,
+  "value": "Process Improvement",
+  "label": "Process Improvement",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 257,
+  "value": "Project Management",
+  "label": "Project Management",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 258,
+  "value": "Adobe",
+  "label": "Adobe",
+  "skill_group": "Software",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 260,
+  "value": "Mixed Effects",
+  "label": "Mixed Effects",
+  "skill_group": "Statistical Modeling",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 263,
+  "value": "Civil",
+  "label": "Civil",
+  "skill_group": "",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 264,
+  "value": "Data Pipelines",
+  "label": "Data Pipelines",
+  "skill_group": "Data Engineering",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 265,
+  "value": "Data Science",
+  "label": "Data Science",
+  "skill_group": "",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 266,
+  "value": "Distributed Computing Environment",
+  "label": "Distributed Computing Environment",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 267,
+  "value": "Distribution",
+  "label": "Distribution",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 270,
+  "value": "Experience",
+  "label": "Experience",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 273,
+  "value": "Experimental Design",
+  "label": "Experimental Design",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 275,
+  "value": "Google",
+  "label": "Google",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 276,
+  "value": "Google Analytics",
+  "label": "Google Analytics",
+  "skill_group": "",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 277,
+  "value": "GPU",
+  "label": "GPU",
+  "skill_group": "Hardware",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 278,
+  "value": "Informatica",
+  "label": "Informatica",
+  "skill_group": "Cloud Computing",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 279,
+  "value": "Iterative Development",
+  "label": "Iterative Development",
+  "skill_group": "Methodology",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 280,
+  "value": "Micro",
+  "label": "Micro",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 281,
+  "value": "Network Planning",
+  "label": "Network Planning",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 282,
+  "value": "Object Oriented Programming",
+  "label": "Object Oriented Programming",
+  "skill_group": "Methodology",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 283,
+  "value": "Pre-Sales Engineering",
+  "label": "Pre-Sales Engineering",
+  "skill_group": "General Skill",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 284,
+  "value": "Pricing",
+  "label": "Pricing",
+  "skill_group": "Domain Expertise",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 285,
+  "value": "Programming Languages",
+  "label": "Programming Languages",
+  "skill_group": "General Skill",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 286,
+  "value": "Recommender Systems",
+  "label": "Recommender Systems",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 287,
+  "value": "Reengineering",
+  "label": "Reengineering",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 288,
+  "value": "Reporting",
+  "label": "Reporting",
+  "skill_group": "General Skill",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 289,
+  "value": "S3",
+  "label": "S3",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 290,
+  "value": "Salesforce",
+  "label": "Salesforce",
+  "skill_group": "",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 293,
+  "value": "Software Development",
+  "label": "Software Development",
+  "skill_group": "General Skill",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 294,
+  "value": "spaCy",
+  "label": "spaCy",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 295,
+  "value": "Stata",
+  "label": "Stata",
+  "skill_group": "Programming Language - Econometrics",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 296,
+  "value": "Structured Data",
+  "label": "Structured Data",
+  "skill_group": "General Skill",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 297,
+  "value": "Supply Chain",
+  "label": "Supply Chain",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 298,
+  "value": "Version Control",
+  "label": "Version Control",
+  "skill_group": "Development Tools",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 299,
+  "value": "VM",
+  "label": "VM",
+  "skill_group": "Virtualization",
+  "skill_category": "Operating System"
+  },
+  {
+  "id": 300,
+  "value": "Windows",
+  "label": "Windows",
+  "skill_group": "Operating System",
+  "skill_category": "Operating System"
+  },
+  {
+  "id": 301,
+  "value": "XGBoost",
+  "label": "XGBoost",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 302,
+  "value": "XML",
+  "label": "XML",
+  "skill_group": "Data format",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 303,
+  "value": "Yield Management",
+  "label": "Yield Management",
+  "skill_group": "Domain Expertise",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 304,
+  "value": "Looker",
+  "label": "Looker",
+  "skill_group": "Business Intelligence",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 333,
+  "value": "Atlassian",
+  "label": "Atlassian",
+  "skill_group": "Collaboration tools",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 334,
+  "value": "Bachelors",
+  "label": "Bachelors",
+  "skill_group": "Credential",
+  "skill_category": "Credential"
+  },
+  {
+  "id": 335,
+  "value": "CFA",
+  "label": "CFA",
+  "skill_group": "Credential",
+  "skill_category": "Credential"
+  },
+  {
+  "id": 362,
+  "value": "Hortonworks",
+  "label": "Hortonworks",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 363,
+  "value": "Kubernetes",
+  "label": "Kubernetes",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 408,
+  "value": "Accumulo",
+  "label": "Accumulo",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 409,
+  "value": "BigTable",
+  "label": "BigTable",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 413,
+  "value": "DynamoDB",
+  "label": "DynamoDB",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 414,
+  "value": "KDB",
+  "label": "KDB",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 415,
+  "value": "Netezza",
+  "label": "Netezza",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 419,
+  "value": "Physics",
+  "label": "Physics",
+  "skill_group": "Database Technology",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 420,
+  "value": "SQL Server",
+  "label": "SQL Server",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 421,
+  "value": "Jenkins",
+  "label": "Jenkins",
+  "skill_group": "Development Tool",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 423,
+  "value": "Jira",
+  "label": "Jira",
+  "skill_group": "Development Tool",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 424,
+  "value": "Continuous Deployment",
+  "label": "Continuous Deployment",
+  "skill_group": "Development Tool",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 425,
+  "value": "Continuous Integration",
+  "label": "Continuous Integration",
+  "skill_group": "Development Tool",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 426,
+  "value": "Celery",
+  "label": "Celery",
+  "skill_group": "Distributed System",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 430,
+  "value": "Applied Mathematics",
+  "label": "Applied Mathematics",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 432,
+  "value": "Asset Management",
+  "label": "Asset Management",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 433,
+  "value": "Astronomy",
+  "label": "Astronomy",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 434,
+  "value": "Bioinformatics",
+  "label": "Bioinformatics",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 435,
+  "value": "Biology",
+  "label": "Biology",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 436,
+  "value": "Biomedical",
+  "label": "Biomedical",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 443,
+  "value": "Computer Science",
+  "label": "Computer Science",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 444,
+  "value": "Dynamic Pricing",
+  "label": "Dynamic Pricing",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 446,
+  "value": "eCommerce",
+  "label": "eCommerce",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 447,
+  "value": "Electronic Trading",
+  "label": "Electronic Trading",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 448,
+  "value": "Finance",
+  "label": "Finance",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 453,
+  "value": "FinTech",
+  "label": "FinTech",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 455,
+  "value": "Fraud Detection",
+  "label": "Fraud Detection",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 457,
+  "value": "Healthcare",
+  "label": "Healthcare",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 459,
+  "value": "Insurance",
+  "label": "Insurance",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 460,
+  "value": "Life Science",
+  "label": "Life Science",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 473,
+  "value": "Retail",
+  "label": "Retail",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 474,
+  "value": "Telecom",
+  "label": "Telecom",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 476,
+  "value": "Unified Medical Language System",
+  "label": "Unified Medical Language System",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 477,
+  "value": "Small Business",
+  "label": "Small Business",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 478,
+  "value": "Robotics",
+  "label": "Robotics",
+  "skill_group": "Domain Expertise",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 510,
+  "value": "Computer Vision",
+  "label": "Computer Vision",
+  "skill_group": "General Skill",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 524,
+  "value": "Data Design",
+  "label": "Data Design",
+  "skill_group": "General Skill",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 526,
+  "value": "Data Management",
+  "label": "Data Management",
+  "skill_group": "General Skill",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 527,
+  "value": "Data Manipulation",
+  "label": "Data Manipulation",
+  "skill_group": "General Skill",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 556,
+  "value": "Price Optimization",
+  "label": "Price Optimization",
+  "skill_group": "General Skill",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 557,
+  "value": "Problem Solving",
+  "label": "Problem Solving",
+  "skill_group": "General Skill",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 587,
+  "value": "CNN",
+  "label": "CNN",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 588,
+  "value": "DataRobot",
+  "label": "DataRobot",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 591,
+  "value": "Decision Tree",
+  "label": "Decision Tree",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 594,
+  "value": "Labeling",
+  "label": "Labeling",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 646,
+  "value": "Mahout",
+  "label": "Mahout",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 647,
+  "value": "MLlib",
+  "label": "MLlib",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 648,
+  "value": "Naive Bayes Classifier",
+  "label": "Naive Bayes Classifier",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 649,
+  "value": "Neural Networks",
+  "label": "Neural Networks",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 650,
+  "value": "Numerical Optimization",
+  "label": "Numerical Optimization",
+  "skill_group": "Mathematical",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 652,
+  "value": "Cisco",
+  "label": "Cisco",
+  "skill_group": "Network",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 653,
+  "value": "Anaconda",
+  "label": "Anaconda",
+  "skill_group": "Platform",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 655,
+  "value": "Mode Analytics",
+  "label": "Mode Analytics",
+  "skill_group": "Platform",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 656,
+  "value": "Business Analyst",
+  "label": "Business Analyst",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 659,
+  "value": "Chief Data Scientist",
+  "label": "Chief Data Scientist",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 662,
+  "value": "Data Architect",
+  "label": "Data Architect",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 677,
+  "value": "Database Administrator",
+  "label": "Database Administrator",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 678,
+  "value": "Engineer",
+  "label": "Engineer",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 680,
+  "value": "Enterprise Architect",
+  "label": "Enterprise Architect",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 681,
+  "value": "Hospital Improvement Innovation Network Analyst",
+  "label": "Hospital Improvement Innovation Network Analyst",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 682,
+  "value": "Jr. Data Scientist",
+  "label": "Jr. Data Scientist",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 683,
+  "value": "Lead Data Scientist",
+  "label": "Lead Data Scientist",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 684,
+  "value": "Master Data Management Analyst",
+  "label": "Master Data Management Analyst",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 687,
+  "value": "Senior Data Scientist",
+  "label": "Senior Data Scientist",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 690,
+  "value": "Senior Manager",
+  "label": "Senior Manager",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 691,
+  "value": "Software Developer",
+  "label": "Software Developer",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 694,
+  "value": "Web Developer",
+  "label": "Web Developer",
+  "skill_group": "Position",
+  "skill_category": "Position"
+  },
+  {
+  "id": 703,
+  "value": "Caffe",
+  "label": "Caffe",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 704,
+  "value": "CGI",
+  "label": "CGI",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 759,
+  "value": "PyTorch",
+  "label": "PyTorch",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 803,
+  "value": "Mathematica",
+  "label": "Mathematica",
+  "skill_group": "Programming Language (Math/Stat)",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 805,
+  "value": "BitBucket",
+  "label": "BitBucket",
+  "skill_group": "Programming Tool",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 807,
+  "value": "GitHub",
+  "label": "GitHub",
+  "skill_group": "Programming Tool",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 808,
+  "value": "R Studio",
+  "label": "R Studio",
+  "skill_group": "Programming Tool",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 809,
+  "value": "RapidMiner",
+  "label": "RapidMiner",
+  "skill_group": "Programming Tool",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 812,
+  "value": "Change Management",
+  "label": "Change Management",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 813,
+  "value": "Communication",
+  "label": "Communication",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 814,
+  "value": "Enterprise Resource Planing",
+  "label": "Enterprise Resource Planing",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 817,
+  "value": "Onboarding",
+  "label": "Onboarding",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 818,
+  "value": "Organization Transformation",
+  "label": "Organization Transformation",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 819,
+  "value": "Quality Assurance",
+  "label": "Quality Assurance",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 822,
+  "value": "Solutions Implementation",
+  "label": "Solutions Implementation",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 823,
+  "value": "Strategy",
+  "label": "Strategy",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 826,
+  "value": "Teaching",
+  "label": "Teaching",
+  "skill_group": "Soft Skill",
+  "skill_category": "Soft Skill"
+  },
+  {
+  "id": 832,
+  "value": "Logistic Regression",
+  "label": "Logistic Regression",
+  "skill_group": "Statistics",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 833,
+  "value": "Docker",
+  "label": "Docker",
+  "skill_group": "Virtualization",
+  "skill_category": "Virtualization"
+  },
+  {
+  "id": 834,
+  "value": "Dashboards",
+  "label": "Dashboards",
+  "skill_group": "Visualization",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 835,
+  "value": "Matplotlib",
+  "label": "Matplotlib",
+  "skill_group": "Visualization",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 836,
+  "value": "Qlikview",
+  "label": "Qlikview",
+  "skill_group": "Visualization",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 843,
+  "value": "Analytics",
+  "label": "Analytics",
+  "skill_group": "",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 844,
+  "value": "Ansible",
+  "label": "Ansible",
+  "skill_group": "Automation tools",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 845,
+  "value": "Application Development",
+  "label": "Application Development",
+  "skill_group": "General Skill",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 847,
+  "value": "Backend Coding",
+  "label": "Backend Coding",
+  "skill_group": "General Skill",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 848,
+  "value": "Behavioral Modeling",
+  "label": "Behavioral Modeling",
+  "skill_group": "Domain Expertise",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 849,
+  "value": "Benchmark",
+  "label": "Benchmark",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 850,
+  "value": "Blueprint",
+  "label": "Blueprint",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 851,
+  "value": "Capacity",
+  "label": "Capacity",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 852,
+  "value": "CHAID",
+  "label": "CHAID",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 853,
+  "value": "CloudBase",
+  "label": "CloudBase",
+  "skill_group": "Cloud Computing",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 854,
+  "value": "Cloudera",
+  "label": "Cloudera",
+  "skill_group": "Cloud Computing",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 855,
+  "value": "Cognitive Technology",
+  "label": "Cognitive Technology",
+  "skill_group": "AI",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 856,
+  "value": "Computer",
+  "label": "Computer",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 857,
+  "value": "Computer Engineering",
+  "label": "Computer Engineering",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 858,
+  "value": "CPLEX",
+  "label": "CPLEX",
+  "skill_group": "Optimization tools",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 860,
+  "value": "Customer Service",
+  "label": "Customer Service",
+  "skill_group": "Domain Knowledge",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 863,
+  "value": "Data",
+  "label": "Data",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 867,
+  "value": "Data Science",
+  "label": "Data Science",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 868,
+  "value": "Python",
+  "label": "Python",
+  "skill_group": "",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 869,
+  "value": "Machine Learning",
+  "label": "Machine Learning",
+  "skill_group": "",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 872,
+  "value": "Statistics",
+  "label": "Statistics",
+  "skill_group": "",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 883,
+  "value": "Data Sets",
+  "label": "Data Sets",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 884,
+  "value": "Data Streaming",
+  "label": "Data Streaming",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 885,
+  "value": "DAX",
+  "label": "DAX",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 886,
+  "value": "Design",
+  "label": "Design",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 888,
+  "value": "Development",
+  "label": "Development",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 889,
+  "value": "DevOps",
+  "label": "DevOps",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 892,
+  "value": "Domino",
+  "label": "Domino",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 893,
+  "value": "DynamoDB",
+  "label": "DynamoDB",
+  "skill_group": "Database Technology",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 895,
+  "value": "Engineering",
+  "label": "Engineering",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 896,
+  "value": "Erwin",
+  "label": "Erwin",
+  "skill_group": "Data Modeling",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 912,
+  "value": "Flash",
+  "label": "Flash",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 913,
+  "value": "Forecast",
+  "label": "Forecast",
+  "skill_group": "Statistics",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 914,
+  "value": "Full Funnel Analytics",
+  "label": "Full Funnel Analytics",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 916,
+  "value": "Full Stack",
+  "label": "Full Stack",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 917,
+  "value": "Graphics",
+  "label": "Graphics",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 918,
+  "value": "H2O",
+  "label": "H2O",
+  "skill_group": "",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 921,
+  "value": "Impala",
+  "label": "Impala",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 922,
+  "value": "Industrial Engineering and Operations Research",
+  "label": "Industrial Engineering and Operations Research",
+  "skill_group": "Academic department",
+  "skill_category": "Domain Expertise"
+  },
+  {
+  "id": 923,
+  "value": "Inference",
+  "label": "Inference",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 926,
+  "value": "Java Database Connectivity",
+  "label": "Java Database Connectivity",
+  "skill_group": "Programming Language",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 927,
+  "value": "JDA Software",
+  "label": "JDA Software",
+  "skill_group": "Supply Chain",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 929,
+  "value": "Kafka",
+  "label": "Kafka",
+  "skill_group": "Development tool (real-time data)",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 932,
+  "value": "Kaggle",
+  "label": "Kaggle",
+  "skill_group": "Competition",
+  "skill_category": "Projects & Challenges, Competitions"
+  },
+  {
+  "id": 933,
+  "value": "Knowledge",
+  "label": "Knowledge",
+  "skill_group": "Machine Learning",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 934,
+  "value": "Kubernetes",
+  "label": "Kubernetes",
+  "skill_group": "Containers",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 935,
+  "value": "Labeling",
+  "label": "Labeling",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 936,
+  "value": "Laboratory",
+  "label": "Laboratory",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 937,
+  "value": "Lambda Functions",
+  "label": "Lambda Functions",
+  "skill_group": "Mathematical",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 939,
+  "value": "Linear",
+  "label": "Linear",
+  "skill_group": "Methodology",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 940,
+  "value": "Logging Systems",
+  "label": "Logging Systems",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 941,
+  "value": "Materials",
+  "label": "Materials",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 942,
+  "value": "Mathematical Proficiency",
+  "label": "Mathematical Proficiency",
+  "skill_group": "Mathematical",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 943,
+  "value": "Microservices",
+  "label": "Microservices",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 944,
+  "value": "Microsoft",
+  "label": "Microsoft",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 945,
+  "value": "Microstrategy",
+  "label": "Microstrategy",
+  "skill_group": "",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 946,
+  "value": "Middleware",
+  "label": "Middleware",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 947,
+  "value": "Modeling",
+  "label": "Modeling",
+  "skill_group": "",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 949,
+  "value": "Natural Programmer",
+  "label": "Natural Programmer",
+  "skill_group": "",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 950,
+  "value": "Networking",
+  "label": "Networking",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 952,
+  "value": "Networks",
+  "label": "Networks",
+  "skill_group": "",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 954,
+  "value": "Operating",
+  "label": "Operating",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 955,
+  "value": "Optimization",
+  "label": "Optimization",
+  "skill_group": "Mathematical Technique",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 958,
+  "value": "Performance",
+  "label": "Performance",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 959,
+  "value": "Pivotal Cloud Foundry",
+  "label": "Pivotal Cloud Foundry",
+  "skill_group": "Cloud Computing",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 961,
+  "value": "Platform",
+  "label": "Platform",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 962,
+  "value": "PowerBI",
+  "label": "PowerBI",
+  "skill_group": "Visualization",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 965,
+  "value": "PowerPoint",
+  "label": "PowerPoint",
+  "skill_group": "",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 966,
+  "value": "Presto",
+  "label": "Presto",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 968,
+  "value": "Process Reengineering",
+  "label": "Process Reengineering",
+  "skill_group": "Domain Expertise",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 969,
+  "value": "Product Development",
+  "label": "Product Development",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 970,
+  "value": "Programming Languages",
+  "label": "Programming Languages",
+  "skill_group": "",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 971,
+  "value": "Protocols",
+  "label": "Protocols",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 972,
+  "value": "Puppet",
+  "label": "Puppet",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 973,
+  "value": "Pydata",
+  "label": "Pydata",
+  "skill_group": "",
+  "skill_category": "Conferences"
+  },
+  {
+  "id": 974,
+  "value": "Pyspark",
+  "label": "Pyspark",
+  "skill_group": "Database Tecnology",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 975,
+  "value": "Pythin",
+  "label": "Pythin",
+  "skill_group": "",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 976,
+  "value": "RabbitMQ",
+  "label": "RabbitMQ",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 977,
+  "value": "Rafa",
+  "label": "Rafa",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 978,
+  "value": "Random Forest",
+  "label": "Random Forest",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 981,
+  "value": "Recurrent Neural Network",
+  "label": "Recurrent Neural Network",
+  "skill_group": "Machine Learning",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 987,
+  "value": "S3",
+  "label": "S3",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 988,
+  "value": "SaaS",
+  "label": "SaaS",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 989,
+  "value": "SageMaker",
+  "label": "SageMaker",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 991,
+  "value": "Scheduling",
+  "label": "Scheduling",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 995,
+  "value": "Seaborn",
+  "label": "Seaborn",
+  "skill_group": "",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 996,
+  "value": "Security",
+  "label": "Security",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 999,
+  "value": "Selenium",
+  "label": "Selenium",
+  "skill_group": "Test automation",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1000,
+  "value": "Snowflake",
+  "label": "Snowflake",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1002,
+  "value": "Software Development Life Cycle",
+  "label": "Software Development Life Cycle",
+  "skill_group": "General Skill",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1003,
+  "value": "SOSQL",
+  "label": "SOSQL",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1004,
+  "value": "Spend Analysis",
+  "label": "Spend Analysis",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1005,
+  "value": "Splunk",
+  "label": "Splunk",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1008,
+  "value": "Standard Generalized Markup Language",
+  "label": "Standard Generalized Markup Language",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1009,
+  "value": "Stanford CoreNLP",
+  "label": "Stanford CoreNLP",
+  "skill_group": "Natural Language Processing",
+  "skill_category": "Machine Learning & Stats"
+  },
+  {
+  "id": 1012,
+  "value": "Stored Procedure",
+  "label": "Stored Procedure",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1014,
+  "value": "Supplier Campaign Tracking",
+  "label": "Supplier Campaign Tracking",
+  "skill_group": "Domain Expertise",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1016,
+  "value": "Support Vector Machines",
+  "label": "Support Vector Machines",
+  "skill_group": "Machine Learning",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1017,
+  "value": "Sybase",
+  "label": "Sybase",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1018,
+  "value": "System Programming",
+  "label": "System Programming",
+  "skill_group": "General Skill",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1019,
+  "value": "Systems",
+  "label": "Systems",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1020,
+  "value": "T-SQL",
+  "label": "T-SQL",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1021,
+  "value": "Tagging",
+  "label": "Tagging",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1025,
+  "value": "Terraform",
+  "label": "Terraform",
+  "skill_group": "Infrastructure Management",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1030,
+  "value": "Threat Intelligence",
+  "label": "Threat Intelligence",
+  "skill_group": "Domain Expertise",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1031,
+  "value": "TIBCO",
+  "label": "TIBCO",
+  "skill_group": "Middleware",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1032,
+  "value": "TypeScript",
+  "label": "TypeScript",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1033,
+  "value": "Unstructured Data",
+  "label": "Unstructured Data",
+  "skill_group": "Data Acquisition/Management",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1034,
+  "value": "UX/UI",
+  "label": "UX/UI",
+  "skill_group": "Domain Expertise",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1036,
+  "value": "Vertica",
+  "label": "Vertica",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1038,
+  "value": "Watson",
+  "label": "Watson",
+  "skill_group": "Artifical Intelligence",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1041,
+  "value": "Web Analytics",
+  "label": "Web Analytics",
+  "skill_group": "",
+  "skill_category": "Data Visualization & Reporting"
+  },
+  {
+  "id": 1042,
+  "value": "Web Services",
+  "label": "Web Services",
+  "skill_group": "",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1043,
+  "value": "WPS",
+  "label": "WPS",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1045,
+  "value": "XSLT",
+  "label": "XSLT",
+  "skill_group": "",
+  "skill_category": "needs input"
+  },
+  {
+  "id": 1046,
+  "value": "Zeppelin",
+  "label": "Zeppelin",
+  "skill_group": "",
+  "skill_category": "Collaboration"
+  },
+  {
+  "id": 1047,
+  "value": "Informix",
+  "label": "Informix",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1048,
+  "value": "Sysbase",
+  "label": "Sysbase",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1049,
+  "value": "Redis",
+  "label": "Redis",
+  "skill_group": "Database Technology",
+  "skill_category": "Search & Data Management"
+  },
+  {
+  "id": 1050,
+  "value": "Swift",
+  "label": "Swift",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1051,
+  "value": "Objective C",
+  "label": "Objective C",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1052,
+  "value": "Solidity",
+  "label": "Solidity",
+  "skill_group": "Programming Language",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1053,
+  "value": "AngularJS ",
+  "label": "AngularJS ",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1054,
+  "value": "CakePHP",
+  "label": "CakePHP",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1055,
+  "value": "Codeigniter",
+  "label": "Codeigniter",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1056,
+  "value": "Django",
+  "label": "Django",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1057,
+  "value": "Java Spring ",
+  "label": "Java Spring ",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1058,
+  "value": "Laravel ",
+  "label": "Laravel ",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1059,
+  "value": "Node.js Express",
+  "label": "Node.js Express",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1060,
+  "value": "ReactJS ",
+  "label": "ReactJS ",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1061,
+  "value": "Ruby on Rails",
+  "label": "Ruby on Rails",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1062,
+  "value": "Spring boot",
+  "label": "Spring boot",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1063,
+  "value": "Symfony",
+  "label": "Symfony",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1064,
+  "value": "Unity",
+  "label": "Unity",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1065,
+  "value": "Vue.js ",
+  "label": "Vue.js ",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1066,
+  "value": "Yii",
+  "label": "Yii",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1067,
+  "value": "Cordova",
+  "label": "Cordova",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1068,
+  "value": "Framework7",
+  "label": "Framework7",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1069,
+  "value": "Ionic",
+  "label": "Ionic",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1070,
+  "value": "PhoneGAP",
+  "label": "PhoneGAP",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1071,
+  "value": "React Native",
+  "label": "React Native",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1072,
+  "value": "Flutter",
+  "label": "Flutter",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  },
+  {
+  "id": 1073,
+  "value": "Xamarin",
+  "label": "Xamarin",
+  "skill_group": "Framework or Library",
+  "skill_category": "Programming Languages & Distributions"
+  }
+  ]
+}

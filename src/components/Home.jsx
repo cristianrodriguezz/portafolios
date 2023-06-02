@@ -22,7 +22,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    getPersons();
+    getPersons()
   }, []);
 
   const { filterPersons } = useFilters();

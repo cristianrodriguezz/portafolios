@@ -2,12 +2,12 @@ import { useContext, useId } from "react";
 import { FiltersContext } from "../context/filters";
 
 const Filters = () => {
-  const idSelectRol = useId();
-  const idSelectCountry = useId();
-  const idSelectExperience = useId();
-  const idSelectModality = useId();
+  const idSelectRol = useId()
+  const idSelectCountry = useId()
+  const idSelectExperience = useId()
+  const idSelectModality = useId()
   // const idSelect
-  const { setFilters } = useContext(FiltersContext);
+  const { setFilters } = useContext(FiltersContext)
 
   const handleChangeFiltersRol = (e) => {
     setFilters((prev) => ({

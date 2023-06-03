@@ -1,10 +1,12 @@
 import GitHub from "./icons/GitHub";
 import Linkedin from "./icons/Linkedin";
 import Twitter from "./icons/Twitter";
+import { persons } from "../mocks/persons.json";
+import { useFilters } from "../hooks/useFilters";
 
 export const Person = ({ person }) => {
   return (
-    <a
+    <li
       href={person?.linkPortfolio}
       key={person?.id}
       className="flex text-victoria-textPrimary p-2 bg-background-200 justify-center w-full h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl hover:scale-105 transition-all"
@@ -67,14 +69,18 @@ export const Person = ({ person }) => {
           </nav>
         </div>
       </div>
-    </a>
+    </li>
   );
 };
 
-const ListPersons = ({ persons }) => {
+const ListPersons = () => {
+  const {filterPersons} = useFilters()
+
+  const people = filterPersons(persons)
+
   return (
     <ul className="w-full flex-wrap gap-4 grid-cols-none sm:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20  xl:grid-cols-4 2xl:mr-60 2xl:ml-60 grid flex-row justify-center pt-8 pr-2 pl-2 sm:pr-4 text-victoria-bodyText ">
-      {persons?.map((person) => (
+      {people?.map((person) => (
         <Person key={person?.id} person={person} />
       ))}
     </ul>

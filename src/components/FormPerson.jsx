@@ -15,21 +15,27 @@ const FormPerson = () => {
   const [formDataAvatar, setFormDataAvatar] = useState(null);
   const [urlAvatar, setUrlAvatar] = useState("");
   const [skills, setSkills] = useState([]);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
+  const [body, setBody] = useState()  
+  const arraySkill = skills?.map((skill) => skill.value);
 
 
-
-  const arraySkill = skills?.map((skill) => skill.value)
-
-  const [body, setBody] = useState();
+  useEffect(() => {
+    setBody((prev) => ({
+      ...prev,
+      skills: arraySkill,
+      photo: urlAvatar,
+    }))
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ arraySkill.length, urlAvatar]);
 
   const urlAvatarImage = (url) => {
     setUrlAvatar(url);
   };
 
   const handleChange = (e) => {
-    setBody(stuffedCard(e.target, urlAvatar, arraySkill));
-  }
+    setBody(stuffedCard(e.target, urlAvatar,arraySkill ));
+  };
 
   useEffect(() => {
     setFormDataAvatar(document.getElementById("formAvatar"));
@@ -40,7 +46,7 @@ const FormPerson = () => {
     const form = new FormData(e.target);
     const urlImage = await submitImage(formDataAvatar);
     try {
-      setLoading(true)
+      setLoading(true);
       const body = {
         name: form.get("name"),
         lastName: form.get("lastName"),
@@ -69,16 +75,16 @@ const FormPerson = () => {
       console.log(data);
     } catch (error) {
       console.log(error);
-      setLoading(false)
-    }finally{
-      setLoading(false)
+      setLoading(false);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <div className="flex mx-1 h-full lg:mx-28 xl:mx-52 gap-8 my-10 sm:mx-9 2xl:mx-80">
       <div className="w-96 h-96 hidden sm:flex sticky top-9">
-        <Person person={body} array={arraySkill}/>
+        <Person person={body} />
       </div>
       <div className="w-full  bg-victoria-bgCardPrimary px-1 sm:px-10 sm:pb-5 rounded-lg shadow-pers ">
         <div className="flex flex-col ">
@@ -136,7 +142,9 @@ const FormPerson = () => {
                 id="role"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled selected hidden>Seleccionar</option>
+                <option value="" disabled selected hidden>
+                  Seleccionar
+                </option>
                 {roles.map((role) => (
                   <option key={role} value={role}>
                     {role}
@@ -172,7 +180,9 @@ const FormPerson = () => {
                 id="country"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled selected hidden>Seleccionar</option>
+                <option value="" disabled selected hidden>
+                  Seleccionar
+                </option>
                 {countries.map((country) => (
                   <option key={country.name} value={country.name}>
                     {country.name}
@@ -193,7 +203,9 @@ const FormPerson = () => {
                 id="modality"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled selected hidden>Seleccionar</option>
+                <option value="" disabled selected hidden>
+                  Seleccionar
+                </option>
                 {modalities.map((modality) => (
                   <option key={modality} value={modality}>
                     {modality}
@@ -214,7 +226,9 @@ const FormPerson = () => {
                 id="experience"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled selected hidden>Seleccionar</option>
+                <option value="" disabled selected hidden>
+                  Seleccionar
+                </option>
                 {experiences.map((experience) => (
                   <option key={experience.name} value={experience.name}>
                     {experience.name}
@@ -287,7 +301,7 @@ const FormPerson = () => {
                 className="items-center justify-center w-full px-6 py-2.5 text-center text-victoria-textPrimary bg-victoria-buttonPrimary border-2 rounded-full nline-flex hover:bg-victoria-buttonSecondary hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
                 type="submit"
               >
-                {!loading ? 'Crear' : 'Cargando...'}
+                {!loading ? "Crear" : "Cargando..."}
               </button>
             </div>
           </div>

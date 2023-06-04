@@ -4,3 +4,24 @@
   transition: all 500ms all;
 
 }
+/* Works on Firefox */
+#scroll-skill{
+  scrollbar-width: 1px;          /* "auto" or "thin" */
+  scrollbar-color: rgb(138, 138, 138) rgba(255, 166, 0, 0);   /* scroll thumb and track */
+}
+
+
+/* Works on Chrome, Edge, and Safari */
+#scroll-skill::-webkit-scrollbar {
+  width: 1px;
+  height: 5px;
+}
+
+#scroll-skill::-webkit-scrollbar-track {
+  background: rgba(255, 166, 0, 0);
+}
+
+#scroll-skill::-webkit-scrollbar-thumb {
+  background-color: rgb(121, 121, 121);
+  border-radius: 20px;
+}

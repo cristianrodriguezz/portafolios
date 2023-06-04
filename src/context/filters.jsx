@@ -4,7 +4,7 @@ export const FiltersContext = createContext();
 
 export const FiltersProvider = ({ children }) => {
   const [filters, setFilters] = useState({
-    role: "all",
+    work: "all",
     country: "all",
     favorite: "none",
     experience: "none",

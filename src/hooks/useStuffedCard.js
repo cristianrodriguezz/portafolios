@@ -10,7 +10,7 @@ export const stuffedCard = (input, urlAvatar, skills) => {
     name: inputValues.name || "",
     lastName: inputValues.lastName || "",
     email: inputValues.email || "",
-    role: inputValues.role || "",
+    work: inputValues.work || "",
     country: inputValues.country || "",
     photo: urlAvatar || "",
     modality: inputValues.modality || "",

@@ -1,16 +1,11 @@
 import Select from "react-select";
 import { skills } from "../mocks/skills.json";
-import { useRef } from "react";
-
 
 export default function SelectMultiple({skillSelect}) {
-  const reference = useRef(0)
 
   const handleSelectChange = (selectedOptions) => {
     skillSelect(selectedOptions)
-    ++reference.current
   }
-
 
   return (
     <Select

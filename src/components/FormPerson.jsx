@@ -51,7 +51,7 @@ const FormPerson = () => {
         name: form.get("name"),
         lastName: form.get("lastName"),
         email: form.get("email"),
-        role: form.get("role"),
+        work: form.get("work"),
         country: form.get("country"),
         photo: urlImage,
         modality: form.get("modality"),
@@ -59,9 +59,11 @@ const FormPerson = () => {
         favorite: false,
         hasBadge: false,
         linkPortfolio: form.get("linkPortfolio"),
-        linkedin: form.get("socialMediaLinkedin"),
-        github: form.get("socialMediaGitHub"),
-        twitter: form.get("socialMediaTwitter"),
+        social_media:{
+          linkedin: form.get("socialMediaLinkedin"),
+          github: form.get("socialMediaGitHub"),
+          twitter: form.get("socialMediaTwitter"),
+        },
         skills: arraySkill,
       };
       const response = await fetch(URL, {
@@ -83,7 +85,7 @@ const FormPerson = () => {
 
   return (
     <div className="flex mx-1 h-full lg:mx-28 xl:mx-52 gap-8 my-10 sm:mx-9 2xl:mx-80">
-      <div className="w-96 h-96 hidden sm:flex sticky top-9">
+      <div className="w-64 h-96 hidden sm:flex sticky top-9">
         <Person person={body} />
       </div>
       <div className="w-full  bg-victoria-bgCardPrimary px-1 sm:px-10 sm:pb-5 rounded-lg shadow-pers ">
@@ -133,21 +135,22 @@ const FormPerson = () => {
             <div className="col-span-full">
               <label
                 className="block mb-3 text-sm font-medium text-victoria-textPrimary"
-                name="role"
+                name="work"
               >
                 Rol
               </label>
               <select
-                name="role"
-                id="role"
+                defaultValue={''}
+                name="work"
+                id="work"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled selected hidden>
+                <option value="" disabled  hidden>
                   Seleccionar
                 </option>
-                {roles.map((role) => (
-                  <option key={role} value={role}>
-                    {role}
+                {roles.map((work) => (
+                  <option key={work} value={work}>
+                    {work}
                   </option>
                 ))}
               </select>
@@ -178,9 +181,10 @@ const FormPerson = () => {
               <select
                 name="country"
                 id="country"
+                defaultValue={''}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled selected hidden>
+                <option value="" disabled   hidden>
                   Seleccionar
                 </option>
                 {countries.map((country) => (
@@ -201,9 +205,10 @@ const FormPerson = () => {
               <select
                 name="modality"
                 id="modality"
+                defaultValue={''}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled selected hidden>
+                <option value="" disabled   hidden>
                   Seleccionar
                 </option>
                 {modalities.map((modality) => (
@@ -224,9 +229,10 @@ const FormPerson = () => {
               <select
                 name="experience"
                 id="experience"
+                defaultValue={''}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled selected hidden>
+                <option value="" disabled   hidden>
                   Seleccionar
                 </option>
                 {experiences.map((experience) => (

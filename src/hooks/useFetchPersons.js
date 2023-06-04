@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 
 export const useFetchPersons = () => {
   
-  const URL = import.meta.env.VITE_BACKEND_URL;
+  // const URL = import.meta.env.VITE_BACKEND_URL;
+  const URL = 'https://backend-repositories.onrender.com/api/repositories'
   const [persons, setPersons] = useState([])
   const [loading, setLoading] = useState(true)
 

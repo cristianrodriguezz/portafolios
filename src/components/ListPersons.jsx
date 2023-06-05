@@ -6,7 +6,7 @@ export const Person = ({ person }) => {
   return (
     <li
       key={person?._id}
-      className="flex text-victoria-textPrimary p-2 bg-background-200 justify-center w-full h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl hover:scale-105 transition-all"
+      className="flex text-victoria-textPrimary p-2 bg-background-200 justify-center  h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl hover:scale-105 transition-all"
     >
       <div className="flex flex-col w-full items-center justify-between text-center">
         <div className="border-b pb-2 w-full ">
@@ -78,7 +78,7 @@ export const Person = ({ person }) => {
 
 const ListPersons = ({ persons }) => {
   return (
-    <ul className="w-full flex-wrap gap-4 grid-cols-none sm:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20  xl:grid-cols-4 2xl:mr-60 2xl:ml-60 grid flex-row justify-center pt-8 pr-2 pl-2 sm:pr-4 text-victoria-bodyText ">
+    <ul className="w-full  gap-4 grid-cols-none sm:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20  xl:grid-cols-4 2xl:mr-60 2xl:ml-60 grid flex-row justify-center pt-8 pr-2 pl-2 sm:pr-4 text-victoria-bodyText ">
       {persons?.map((person) => (
         <Person key={person?._id} person={person} />
       ))}

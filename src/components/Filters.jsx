@@ -1,13 +1,16 @@
 import { useContext, useId } from "react";
 import { FiltersContext } from "../context/filters";
+import { countries } from "../mocks/countries.json";
+import { roles } from "../mocks/roles.json";
+import { experiences } from "../mocks/experience.json";
+import { modalities } from "../mocks/modalities.json";
 
 const Filters = () => {
-  const idSelectRol = useId()
-  const idSelectCountry = useId()
-  const idSelectExperience = useId()
-  const idSelectModality = useId()
-  // const idSelect
-  const { setFilters } = useContext(FiltersContext)
+  const idSelectRol = useId();
+  const idSelectCountry = useId();
+  const idSelectExperience = useId();
+  const idSelectModality = useId();
+  const { setFilters } = useContext(FiltersContext);
 
   const handleChangeFiltersRol = (e) => {
     setFilters((prev) => ({
@@ -54,11 +57,11 @@ const Filters = () => {
             className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
             onChange={handleChangeFiltersRol}
           >
-            <option value="all">Todos</option>
-            <option value="Project Manager">Project Manager</option>
-            <option value="Data Scientist">Data Scientist</option>
-            <option value="Graphic Designer">Graphic Designer</option>
-            <option value="UI/UX Designer">UI/UX Designer</option>
+            {roles.map((role) => (
+              <option key={role} value={role}>
+                {role}
+              </option>
+            ))}
           </select>
         </div>
         <div>
@@ -68,11 +71,11 @@ const Filters = () => {
             onChange={handleChangeFiltersCountry}
             id={idSelectCountry}
           >
-            <option value="all">Todos</option>
-            <option value="Argentina">Argentina</option>
-            <option value="Bolivia">Bolivia</option>
-            <option value="Venezuela">Venezuela</option>
-            <option value="Cuba">Cuba</option>
+            {countries.map((country) => (
+              <option key={country.name} value={country.name}>
+                {country.name}
+              </option>
+            ))}
           </select>
         </div>
         <div>
@@ -82,10 +85,11 @@ const Filters = () => {
             className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
             onChange={handleChangeFiltersExperience}
           >
-            <option value="none">Todos</option>
-            <option value="Sin experiencia">Sin experiencia</option>
-            <option value="6 meses">6 meses</option>
-            <option value="1 año">1 año</option>
+            {experiences.map((experience) => (
+              <option key={experience.name} value={experience.name}>
+                {experience.name}
+              </option>
+            ))}
           </select>
         </div>
         <div>
@@ -95,10 +99,11 @@ const Filters = () => {
             className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
             onChange={handleChangeFiltersExperience}
           >
-            <option value="none">Todos</option>
-            <option value="Sin experiencia">Sin experiencia</option>
-            <option value="6 meses">6 meses</option>
-            <option value="1 año">1 año</option>
+            {modalities.map((modality) => (
+              <option key={modality} value={modality}>
+                {modality}
+              </option>
+            ))}
           </select>
         </div>
         <button onClick={handleClickDisableFilters}>Eliminar filtros</button>

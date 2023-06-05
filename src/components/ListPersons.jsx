@@ -6,7 +6,7 @@ export const Person = ({ person }) => {
   return (
     <li
       key={person?._id}
-      className="flex text-victoria-textPrimary p-2 bg-background-200 justify-center  h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl hover:scale-105 transition-all"
+      className="flex w-full text-victoria-textPrimary p-2 bg-background-200 justify-center  h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl hover:scale-105 transition-all"
     >
       <div className="flex flex-col w-full items-center justify-between text-center">
         <div className="border-b pb-2 w-full ">

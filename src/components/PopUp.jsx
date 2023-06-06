@@ -13,7 +13,6 @@ const PopUp = ({ children, redirect, display, button }) => {
     setState(!state);
     navigate(redirect)
   };
-  console.log(state);
   return (
     <div
       style={!state ? { display: "none" } : { display: "grid" }}

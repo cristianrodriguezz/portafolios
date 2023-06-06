@@ -2,22 +2,22 @@ import { useState } from "react";
 import PopUp from "../components/PopUp";
 
 const FormLogin = () => {
-
   const URL = import.meta.env.VITE_BACKEND_URL;
 
-  const [error, setError] = useState('')
+  const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [createOk, setCreateOk] = useState(false)
+  const [createOk, setCreateOk] = useState(false);
 
+  
 
   const handleSubmitLogin = async (e) => {
     e.preventDefault();
     try {
-      setLoading(true)
-      const formData = new FormData(e.target)
+      setLoading(true);
+      const formData = new FormData(e.target);
       const body = {
-        email: formData.get('email'),
-        password: formData.get('password'),
+        email: formData.get("email"),
+        password: formData.get("password"),
       };
       const response = await fetch(`${URL}/auth/login`, {
         method: "POST",
@@ -26,16 +26,21 @@ const FormLogin = () => {
         },
         body: JSON.stringify(body),
       });
-      const data = await response.json()
-      if(response.ok){
-        setCreateOk(true)
+      const data = await response.json();
+      if (!response.ok) {
+        setError(data.error);
+        throw new Error(response);
       }
-      console.log(data)
+      if (response.ok) {
+        window.localStorage.setItem('user',JSON.stringify(data.data))
+        setCreateOk(true);
+      }
+      console.log(data);
     } catch (error) {
-      console.log(error)
-      setLoading(false)
-    }finally{
-      setLoading(false)
+      console.log(error);
+      setLoading(false);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -70,12 +75,15 @@ const FormLogin = () => {
             name="password"
             id="password"
           ></input>
+          <div className="text-victoria-error  font-bold">{error}</div>
           <button className="items-center justify-center w-full px-6 py-2.5 text-center text-victoria-textPrimary bg-victoria-buttonPrimary  rounded-full  hover:bg-victoria-buttonSecondary hover:border-victoria-buttonSecondary hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black">
-            {loading ? 'Cargando...' : "Iniciar"}
+            {loading ? "Cargando..." : "Iniciar"}
           </button>
         </form>
       </div>
-      <PopUp redirect={"/#"} display={createOk} button={'Aceptar'}>Inicio de sesión con éxito</PopUp>
+      <PopUp redirect={"/#"} display={createOk} button={"Aceptar"}>
+        Inicio de sesión con éxito
+      </PopUp>
     </div>
   );
 };

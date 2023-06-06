@@ -9,7 +9,7 @@ import { Person } from "../components/ListPersons";
 import { stuffedCard } from "../hooks/useStuffedCard";
 import SelectMultiple from "../components/SelectMultiple";
 
-const FormPerson = () => {
+const FormRepositorie = () => {
   const URL = import.meta.env.VITE_BACKEND_URL;
 
   const [formDataAvatar, setFormDataAvatar] = useState(null);
@@ -18,6 +18,7 @@ const FormPerson = () => {
   const [loading, setLoading] = useState(false);
   const [body, setBody] = useState();
   const arraySkill = skills?.map((skill) => skill.value);
+  const user = JSON.parse(localStorage.getItem('user'))
 
   useEffect(() => {
     setBody((prev) => ({
@@ -44,6 +45,7 @@ const FormPerson = () => {
     e.preventDefault();
     const form = new FormData(e.target);
     const urlImage = await submitImage(formDataAvatar);
+
     try {
       setLoading(true);
       const body = {
@@ -57,13 +59,14 @@ const FormPerson = () => {
         experience: form.get("experience"),
         favorite: false,
         hasBadge: false,
-        linkPortfolio: form.get("linkPortfolio"),
+        portfolio: form.get("linkPortfolio"),
         social_media: {
           linkedin: form.get("socialMediaLinkedin"),
           github: form.get("socialMediaGitHub"),
           twitter: form.get("socialMediaTwitter"),
         },
         skills: arraySkill,
+        userId: user.user._id
       };
       const response = await fetch(`${URL}/repositories`, {
         method: "POST",
@@ -316,4 +319,4 @@ const FormPerson = () => {
   );
 };
 
-export default FormPerson;
+export default FormRepositorie;

@@ -33,7 +33,7 @@ const Filters = () => {
   };
   const handleClickDisableFilters = () => {
     setFilters({
-      role: "all",
+      work: "all",
       country: "all",
       favorite: "none",
       experience: "none",

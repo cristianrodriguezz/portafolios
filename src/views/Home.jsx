@@ -1,5 +1,5 @@
-import Filters from "./Filters";
-import ListPersons from "./ListPersons";
+import Filters from "../components/Filters";
+import ListPersons from "../components/ListPersons";
 import { useFilters } from "../hooks/useFilters.js";
 import { useFetchPersons } from "../hooks/useFetchPersons";
 

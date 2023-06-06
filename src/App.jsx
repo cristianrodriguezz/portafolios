@@ -1,8 +1,10 @@
 import "./App.css";
 import Layout from "./layouts/Layout";
 import { Routes, Route } from "react-router";
-import Home from "./components/Home";
-import FormPerson from "./components/FormPerson";
+import Home from "./views/Home";
+import FormPerson from "./views/FormPerson";
+import FormRegister from "./views/FormRegister";
+import FormLogin from "./views/FormLogin";
 
 function App() {
 
@@ -11,7 +13,9 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" exact element={<Home />}/>
-        <Route path="/register" exact element={<FormPerson />}/>
+        <Route path="/createRepositorie" exact element={<FormPerson />}/>
+        <Route path="/signup" exact element={<FormRegister />}/>
+        <Route path="/signin" exact element={<FormLogin />}/>
       </Routes>
 
     </Layout>

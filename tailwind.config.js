@@ -22,7 +22,8 @@ export default {
           bodyText: "#62807e",
           icon: "#c7d3d2",
           footer:"#1f2937",
-          important: "#93c5fd"
+          important: "#93c5fd",
+          transparent: "rgba(2,3,0,0.4)"
         }
       }
     },

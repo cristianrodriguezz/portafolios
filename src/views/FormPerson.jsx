@@ -4,10 +4,10 @@ import { countries } from "../mocks/countries.json";
 import { experiences } from "../mocks/experience.json";
 import { modalities } from "../mocks/modalities.json";
 import { roles } from "../mocks/roles.json";
-import Avatar from "./Avatar";
-import { Person } from "./ListPersons";
+import Avatar from "../components/Avatar";
+import { Person } from "../components/ListPersons";
 import { stuffedCard } from "../hooks/useStuffedCard";
-import SelectMultiple from "./SelectMultiple";
+import SelectMultiple from "../components/SelectMultiple";
 
 const FormPerson = () => {
   const URL = import.meta.env.VITE_BACKEND_URL;
@@ -16,25 +16,24 @@ const FormPerson = () => {
   const [urlAvatar, setUrlAvatar] = useState("");
   const [skills, setSkills] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [body, setBody] = useState()  
+  const [body, setBody] = useState();
   const arraySkill = skills?.map((skill) => skill.value);
-
 
   useEffect(() => {
     setBody((prev) => ({
       ...prev,
       skills: arraySkill,
       photo: urlAvatar,
-    }))
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ arraySkill.length, urlAvatar]);
+    }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [arraySkill.length, urlAvatar]);
 
   const urlAvatarImage = (url) => {
     setUrlAvatar(url);
   };
 
   const handleChange = (e) => {
-    setBody(stuffedCard(e.target, urlAvatar,arraySkill ));
+    setBody(stuffedCard(e.target, urlAvatar, arraySkill));
   };
 
   useEffect(() => {
@@ -59,14 +58,14 @@ const FormPerson = () => {
         favorite: false,
         hasBadge: false,
         linkPortfolio: form.get("linkPortfolio"),
-        social_media:{
+        social_media: {
           linkedin: form.get("socialMediaLinkedin"),
           github: form.get("socialMediaGitHub"),
           twitter: form.get("socialMediaTwitter"),
         },
         skills: arraySkill,
       };
-      const response = await fetch(URL, {
+      const response = await fetch(`${URL}/repositories`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -140,12 +139,12 @@ const FormPerson = () => {
                 Rol
               </label>
               <select
-                defaultValue={''}
+                defaultValue={""}
                 name="work"
                 id="work"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled  hidden>
+                <option value="" disabled hidden>
                   Seleccionar
                 </option>
                 {roles.map((work) => (
@@ -181,10 +180,10 @@ const FormPerson = () => {
               <select
                 name="country"
                 id="country"
-                defaultValue={''}
+                defaultValue={""}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled   hidden>
+                <option value="" disabled hidden>
                   Seleccionar
                 </option>
                 {countries.map((country) => (
@@ -205,10 +204,10 @@ const FormPerson = () => {
               <select
                 name="modality"
                 id="modality"
-                defaultValue={''}
+                defaultValue={""}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled   hidden>
+                <option value="" disabled hidden>
                   Seleccionar
                 </option>
                 {modalities.map((modality) => (
@@ -229,10 +228,10 @@ const FormPerson = () => {
               <select
                 name="experience"
                 id="experience"
-                defaultValue={''}
+                defaultValue={""}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
-                <option value="" disabled   hidden>
+                <option value="" disabled hidden>
                   Seleccionar
                 </option>
                 {experiences.map((experience) => (
@@ -304,7 +303,7 @@ const FormPerson = () => {
             </div>
             <div className="col-span-full">
               <button
-                className="items-center justify-center w-full px-6 py-2.5 text-center text-victoria-textPrimary bg-victoria-buttonPrimary border-2 rounded-full nline-flex hover:bg-victoria-buttonSecondary hover:border-black hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
+                className="items-center justify-center w-full px-6 py-2.5 text-center text-victoria-textPrimary bg-victoria-buttonPrimary  rounded-full  hover:bg-victoria-buttonSecondary hover:border-victoria-buttonSecondary hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
                 type="submit"
               >
                 {!loading ? "Crear" : "Cargando..."}

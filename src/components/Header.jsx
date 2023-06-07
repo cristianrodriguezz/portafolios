@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const URL = import.meta.env.VITE_BACKEND_URL;
+  const navigate = useNavigate()
   let location = useLocation();
   const [user, setUser] = useState(
     JSON.parse(window.localStorage.getItem("user"))
@@ -15,8 +16,8 @@ const Header = () => {
         .then((res) => res.json())
         .then((data) => setUrlAvatar(data.data[0].photo));
     }
-  }, [user])
-  
+  }, [user]);
+
   console.log(urlAvatar);
 
   const handleClickSignOut = () => {
@@ -35,11 +36,10 @@ const Header = () => {
       return (
         <div className="flex">
           <button
-            to={"/"}
-            onClick={handleClickSignOut}
-            className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer"
+            onClick={()=> navigate('/create')}
+            className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer mr-5"
           >
-            Cerrar sesión
+            Crear perfil
           </button>
           <div className="w-10 h-10 m-auto image-container">
             {!urlAvatar ? (
@@ -58,6 +58,12 @@ const Header = () => {
               />
             )}
           </div>
+          <button
+            onClick={handleClickSignOut}
+            className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer"
+          >
+            Cerrar sesión
+          </button>
         </div>
       );
     } else if (location.pathname === "/") {

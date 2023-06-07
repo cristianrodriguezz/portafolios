@@ -8,7 +8,7 @@ export function useFilters() {
     return persons?.filter((person) => {
       return (
         (filters.country === "all" || person.country === filters.country) &&
-        (filters.work === "all" || person.role === filters.work) &&
+        (filters.work === "all" || person.work === filters.work) &&
         (filters.favorite === "none" || filters.favorite === person.favorite) &&
         (filters.experience === "none" || filters.experience === person.experience) &&
         (filters.modality === "none" || filters.modality === person.modality)

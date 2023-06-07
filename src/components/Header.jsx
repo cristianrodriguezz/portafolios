@@ -15,7 +15,8 @@ const Header = () => {
         .then((res) => res.json())
         .then((data) => setUrlAvatar(data.data[0].photo));
     }
-  }, [user]);
+  }, [user])
+  
   console.log(urlAvatar);
 
   const handleClickSignOut = () => {

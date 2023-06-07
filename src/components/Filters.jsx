@@ -15,7 +15,7 @@ const Filters = () => {
   const handleChangeFiltersRol = (e) => {
     setFilters((prev) => ({
       ...prev,
-      role: e.target.value,
+      work: e.target.value,
     }));
   };
 

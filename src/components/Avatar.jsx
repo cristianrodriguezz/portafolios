@@ -2,7 +2,8 @@ import { useState } from "react";
 import { stuffedCard } from "../hooks/useStuffedCard";
 
 const Avatar = ({ urlAvatar }) => {
-  const [urlImages, setUrlImg] = useState("");
+  const { user } = JSON.parse(window.localStorage.getItem("user"));
+  const [urlImages, setUrlImg] = useState(()=> user?.user?.photo ? '' : user?.photo );
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -22,14 +23,13 @@ const Avatar = ({ urlAvatar }) => {
             className="w-full h-full object-cover rounded-full border-2 border-victoria-buttonPrimary transition-all"
             loading="lazy"
           />
-        ) : (
-          <img
+        ) : <img
             src={urlImages}
             alt="avatar"
             className="w-full h-full object-cover rounded-full border-2 border-victoria-buttonPrimary transition-all"
             loading="lazy"
-          />
-        )}
+          /> 
+          }
       </div>
       <input
         type="file"

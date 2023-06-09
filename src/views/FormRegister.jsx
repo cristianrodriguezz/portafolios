@@ -31,14 +31,13 @@ const FormRegister = () => {
       }
       if (!response.ok) {
         setError(data.error);
-        console.log(data.error);
         throw new Error("Error HTTP: " + response.status);
       }
     } finally {
       setLoading(false);
     }
   };
-  console.log(createOk);
+
 
 
 

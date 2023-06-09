@@ -11,30 +11,36 @@ import SelectMultiple from "../components/SelectMultiple";
 
 const FormRepositorie = () => {
   const URL = import.meta.env.VITE_BACKEND_URL;
+  const {user} = JSON.parse(localStorage.getItem("user"));
 
   const [formDataAvatar, setFormDataAvatar] = useState(null);
-  const [urlAvatar, setUrlAvatar] = useState("");
-  const [skills, setSkills] = useState([]);
+  const [skills, setSkills] = useState(() => !user.skills ? [] : user.skills)
   const [loading, setLoading] = useState(false);
   const [body, setBody] = useState();
-  const arraySkill = skills?.map((skill) => skill.value);
-  const user = JSON.parse(localStorage.getItem('user'))
+  const id = user?._id;
+  const token = user?.token;
+  const [urLocal, setUrlLocal] = useState(user?.photo)
+
+  console.log(user);
+
+  
+
+
 
   useEffect(() => {
     setBody((prev) => ({
       ...prev,
-      skills: arraySkill,
-      photo: urlAvatar,
+      skills: skills,
+      photo: urLocal,
     }));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [arraySkill.length, urlAvatar]);
+  }, [skills, urLocal]);
 
   const urlAvatarImage = (url) => {
-    setUrlAvatar(url);
+    setUrlLocal(url);
   };
 
   const handleChange = (e) => {
-    setBody(stuffedCard(e.target, urlAvatar, arraySkill));
+    setBody(stuffedCard(e.target, urLocal, skills));
   };
 
   useEffect(() => {
@@ -45,13 +51,14 @@ const FormRepositorie = () => {
     e.preventDefault();
     const form = new FormData(e.target);
     const urlImage = await submitImage(formDataAvatar);
+    setUrlLocal(urlImage)
+
 
     try {
       setLoading(true);
       const body = {
         name: form.get("name"),
         lastName: form.get("lastName"),
-        email: form.get("email"),
         work: form.get("work"),
         country: form.get("country"),
         photo: urlImage,
@@ -65,17 +72,23 @@ const FormRepositorie = () => {
           github: form.get("socialMediaGitHub"),
           twitter: form.get("socialMediaTwitter"),
         },
-        skills: arraySkill,
-        userId: user.user._id
+        skills
       };
-      const response = await fetch(`${URL}/repositories`, {
-        method: "POST",
+
+      const response = await fetch(`${URL}/auth/repositories/${id}`, {
+        method: "PATCH",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(body),
       });
       const data = await response.json();
+      window.localStorage.removeItem("user");
+      const updatedUserObject = { token, user: data.user };
+
+      window.localStorage.setItem("user", JSON.stringify(updatedUserObject));
+
+      
       console.log(data);
     } catch (error) {
       console.log(error);
@@ -111,6 +124,7 @@ const FormRepositorie = () => {
                 Nombre
               </label>
               <input
+                defaultValue={user.name}
                 type="text"
                 id="name"
                 name="name"
@@ -130,6 +144,7 @@ const FormRepositorie = () => {
                 type="text"
                 name="lastName"
                 id="lastName"
+                defaultValue={user.lastName}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               />
             </div>
@@ -142,7 +157,7 @@ const FormRepositorie = () => {
                 Rol
               </label>
               <select
-                defaultValue={""}
+                defaultValue={user ? user.work : ""}
                 name="work"
                 id="work"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
@@ -157,20 +172,6 @@ const FormRepositorie = () => {
                 ))}
               </select>
             </div>
-            <div className="col-span-full">
-              <label
-                className="block mb-3 text-sm font-medium text-victoria-textPrimary"
-                name="email"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
-              />
-            </div>
 
             <div className="col-span-full">
               <label
@@ -183,7 +184,7 @@ const FormRepositorie = () => {
               <select
                 name="country"
                 id="country"
-                defaultValue={""}
+                defaultValue={user ? user.country : ""}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
                 <option value="" disabled hidden>
@@ -207,7 +208,7 @@ const FormRepositorie = () => {
               <select
                 name="modality"
                 id="modality"
-                defaultValue={""}
+                defaultValue={user ? user.modality : ""}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
                 <option value="" disabled hidden>
@@ -231,7 +232,7 @@ const FormRepositorie = () => {
               <select
                 name="experience"
                 id="experience"
-                defaultValue={""}
+                defaultValue={user ? user.experience : ""}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
                 <option value="" disabled hidden>
@@ -256,6 +257,7 @@ const FormRepositorie = () => {
                 type="text"
                 id="linkPortfolio"
                 name="linkPortfolio"
+                defaultValue={user.portfolio}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               />
             </div>
@@ -309,7 +311,7 @@ const FormRepositorie = () => {
                 className="items-center justify-center w-full px-6 py-2.5 text-center text-victoria-textPrimary bg-victoria-buttonPrimary  rounded-full  hover:bg-victoria-buttonSecondary hover:border-victoria-buttonSecondary hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
                 type="submit"
               >
-                {!loading ? "Crear" : "Cargando..."}
+                {!loading ? "Guardar cambios" : "Cargando..."}
               </button>
             </div>
           </div>

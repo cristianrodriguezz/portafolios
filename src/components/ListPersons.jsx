@@ -3,10 +3,11 @@ import Linkedin from "./icons/Linkedin";
 import Twitter from "./icons/Twitter";
 
 export const Person = ({ person }) => {
+
   return (
     <li
       key={person?._id}
-      className="flex w-full text-victoria-textPrimary p-2 bg-background-200 justify-center  h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl hover:scale-105 transition-all"
+      className="flex w-full text-victoria-textPrimary p-2 bg-background-200 justify-center  h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl  transition-all"
     >
       <div className="flex flex-col w-full items-center justify-between text-center">
         <div className="border-b pb-2 w-full ">
@@ -14,7 +15,7 @@ export const Person = ({ person }) => {
             <input type="checkbox" className="hidden" id={person?._id} />
             <label className="label" htmlFor={person?._id}>
               <img
-                key={person?.id}
+                key={person?._id}
                 src={person?.photo}
                 alt={person?.name}
                 className="w-full h-full object-cover rounded-full border-2 border-victoria-buttonPrimary transition-all"
@@ -37,10 +38,10 @@ export const Person = ({ person }) => {
         >
           {person?.skills?.map((skill) => (
             <span
-              key={skill}
+              key={skill.id}
               className=" rounded-full mr-1 bg-victoria-important text-victoria-body font-bold px-1"
             >
-              {skill}
+              {skill.value}
             </span>
           ))}
         </div>

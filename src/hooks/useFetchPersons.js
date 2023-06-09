@@ -10,7 +10,7 @@ export const useFetchPersons = () => {
 
   const getPersons = async () => {
     try {
-      const response = await fetch(`${URL}/repositories`);
+      const response = await fetch(`${URL}/auth/repositories`);
       const data = await response.json();
       setPersons(data);
     } catch (error) {

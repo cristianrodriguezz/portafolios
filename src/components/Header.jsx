@@ -10,15 +10,16 @@ const Header = () => {
     JSON.parse(window.localStorage.getItem("user"))
   );
   const [urlAvatar, setUrlAvatar] = useState();
+
   useEffect(() => {
     if (user) {
-      fetch(`${URL}/repositories/${user.user._id}`)
+      fetch(`${URL}/auth/repositorie/${user.user._id}`)
         .then((res) => res.json())
-        .then((data) => setUrlAvatar(data.data[0].photo));
+        .then((data) =>{ 
+          setUrlAvatar(data.data[0].photo)
+        });
     }
   }, [user]);
-
-  console.log(urlAvatar);
 
   const handleClickSignOut = () => {
     window.localStorage.removeItem("user");
@@ -39,7 +40,7 @@ const Header = () => {
             onClick={()=> navigate('/create')}
             className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer mr-5"
           >
-            Crear perfil
+            Perfil
           </button>
           <div className="w-10 h-10 m-auto image-container">
             {!urlAvatar ? (

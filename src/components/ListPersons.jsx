@@ -3,7 +3,6 @@ import Linkedin from "./icons/Linkedin";
 import Twitter from "./icons/Twitter";
 
 export const Person = ({ person }) => {
-
   return (
     <li
       key={person?._id}
@@ -16,7 +15,11 @@ export const Person = ({ person }) => {
             <label className="label" htmlFor={person?._id}>
               <img
                 key={person?._id}
-                src={person?.photo ? person?.photo : 'https://res.cloudinary.com/dwy6oevco/image/upload/v1685696529/Images/adalczr51wmgdl1sshkz.png'}
+                src={
+                  person?.photo
+                    ? person?.photo
+                    : "https://res.cloudinary.com/dwy6oevco/image/upload/v1685696529/Images/adalczr51wmgdl1sshkz.png"
+                }
                 alt={person?.name}
                 className="w-full h-full object-cover rounded-full border-2 border-victoria-buttonPrimary transition-all"
                 loading="lazy"
@@ -52,26 +55,41 @@ export const Person = ({ person }) => {
         </div>
         <div className="flex flex-col">
           <nav className="w-48 flex gap-4 justify-center items-center">
-            <a
-              href={person?.social_media?.git_hub}
-              className=" bg-victoria-bgCardSecondary hover:bg-victoria-buttonPrimary w-10 h-10 rounded-full grid place-content-center"
-            >
-              <GitHub />
-            </a>
-            <a
-              href={person?.social_media?.linkedin}
-              className="bg-victoria-bgCardSecondary hover:bg-victoria-buttonPrimary w-10 h-10 rounded-full grid place-content-center"
-            >
-              <Linkedin />
-            </a>
-            <a
-              href={person?.social_media?.instagram}
-              className="bg-victoria-bgCardSecondary hover:bg-victoria-buttonPrimary  w-10 h-10 rounded-full grid place-content-center"
-            >
-              <Twitter />
-            </a>
+            {person?.social_media?.git_hub ? (
+              <a
+                href={person?.social_media?.git_hub}
+                className=" bg-victoria-bgCardSecondary hover:bg-victoria-buttonPrimary cursor-pointer w-10 h-10 rounded-full grid place-content-center"
+              >
+                <GitHub />
+              </a>
+            ) : null}
+            {person?.social_media?.instagram ? (
+              <a
+                href={person?.social_media?.instagram}
+                className=" bg-victoria-bgCardSecondary hover:bg-victoria-buttonPrimary cursor-pointer w-10 h-10 rounded-full grid place-content-center"
+              >
+                <Twitter />
+              </a>
+            ) : null}
+
+            {person?.social_media?.linkedin ? (
+              <a
+                href={person?.social_media?.linkedin}
+                className=" bg-victoria-bgCardSecondary hover:bg-victoria-buttonPrimary cursor-pointer w-10 h-10 rounded-full grid place-content-center"
+              >
+                <Linkedin />
+              </a>
+            ) : null}
           </nav>
         </div>
+        {person?.portfolio ? (
+          <a
+            className=" bg-victoria-buttonPrimary rounded-full p-1 cursor-pointer"
+            href={person.portfolio}
+          >
+            Ir al portafolio
+          </a>
+        ) : null}
       </div>
     </li>
   );

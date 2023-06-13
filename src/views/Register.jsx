@@ -136,11 +136,19 @@ const Register = () => {
                 </button>
               </form>
               <p className="text-center py-3">
-                ¿Ya tienes una cuenta? <Link className="text-blue-400" to={"/signin"}>Entra aquí</Link>
+                ¿Ya tienes una cuenta?{" "}
+                <Link className="text-blue-400 hover:text-gray-500" to={"/signin"}>
+                  Entra aquí
+                </Link>
               </p>
               <p className="text-center">
-                Al hacer clic en el botón registrarse, acepta nuestros
-                Términos y Condiciones
+                Al hacer clic en el botón registrarse, acepta nuestros{" "}
+                <Link
+                  className="text-blue-500 hover:text-gray-500"
+                  to={"/terminos"}
+                >
+                  Términos y Condiciones
+                </Link>
               </p>
             </div>
             <PopUp redirect={"/signin"} display={createOk} button={"Aceptar"}>

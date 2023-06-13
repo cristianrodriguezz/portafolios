@@ -5,6 +5,7 @@ import Home from "./views/Home";
 import FormRepositorie from "./views/FormRepositorie";
 import FormLogin from "./views/FormLogin";
 import Register from "./views/Register";
+import Terminos from "./views/Terminos";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/create" exact element={<FormRepositorie />} />
         <Route path="/signup" exact element={<Register />} />
         <Route path="/signin" exact element={<FormLogin />} />
+        <Route path="/terminos" exact element={<Terminos/>} />
       </Routes>
     </Layout>
   );

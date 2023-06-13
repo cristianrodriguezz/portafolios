@@ -29,11 +29,11 @@ const FormLogin = () => {
       const data = await response.json();
       console.log(data);
       if (!response.ok) {
-          setError("Credenciales inválidas");
-          setTimeout(() => {
-            setError("");
-          }, 2000);
-          throw new Error(response)
+        setError("Credenciales inválidas");
+        setTimeout(() => {
+          setError("");
+        }, 2000);
+        throw new Error(response);
       }
       if (response.ok) {
         window.localStorage.setItem("user", JSON.stringify(data.data));
@@ -70,17 +70,22 @@ const FormLogin = () => {
           ></input>
 
           <button className="items-center mt-4 justify-center flex w-full px-6 h-12 font-bold text-lg text-center text-victoria-textPrimary bg-victoria-buttonPrimary  rounded-full  hover:bg-victoria-buttonSecondary hover:border-victoria-buttonSecondary hover:text-black focus:outline-none focus-visible:outline-black  focus-visible:ring-black">
-            {loading ? <Loader/> : "Iniciar sesión"}
+            {loading ? <Loader /> : "Iniciar sesión"}
           </button>
           <p className="text-center py-3">
             ¿No estás registrado?{" "}
-            <Link className="text-blue-400" to={"/signup"}>
+            <Link className="text-blue-400  hover:text-gray-500" to={"/signup"}>
               Entra aquí
             </Link>
           </p>
           <p className="text-center">
-            Al hacer clic en el botón iniciar sesión, acepta nuestros Términos y
-            Condiciones
+            Al hacer clic en el botón iniciar sesión, acepta nuestros{" "}
+            <Link
+              className="text-blue-500 hover:text-gray-500"
+              to={"/terminos"}
+            >
+              Términos y Condiciones
+            </Link>
           </p>
         </form>
       </div>

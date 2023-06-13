@@ -10,6 +10,7 @@ import { stuffedCard } from "../hooks/useStuffedCard";
 import SelectMultiple from "../components/SelectMultiple";
 import PopUp from "../components/PopUp";
 import { validation } from "../hooks/useValidation";
+import Loader from "../components/Loader";
 
 const FormRepositorie = () => {
   const URL = import.meta.env.VITE_BACKEND_URL;
@@ -37,8 +38,7 @@ const FormRepositorie = () => {
   const token = user?.token;
   const [urLocal, setUrlLocal] = useState(user?.photo);
   const [notSubmitForValidation, setNotSubmitForValidation] = useState(false);
-  console.log(notSubmitForValidation);
-  console.log(urLocal);
+
 
   useEffect(() => {
     setBody((prev) => ({
@@ -112,7 +112,7 @@ const FormRepositorie = () => {
 
       window.localStorage.setItem("user", JSON.stringify(updatedUserObject));
       if (response.ok) {
-        //location.reload();
+        location.reload();
       }
 
       console.log(data);
@@ -349,7 +349,7 @@ const FormRepositorie = () => {
                 className="items-center mt-4 justify-center flex w-full px-6 h-12 font-bold text-lg text-center text-victoria-textPrimary bg-victoria-buttonPrimary  rounded-full  hover:bg-victoria-buttonSecondary hover:border-victoria-buttonSecondary hover:text-black focus:outline-none focus-visible:outline-black  focus-visible:ring-black"
                 type="submit"
               >
-                {!loading ? "Guardar cambios" : "Cargando..."}
+                {!loading ? "Guardar cambios" : <Loader/>}
               </button>
             </div>
           </div>

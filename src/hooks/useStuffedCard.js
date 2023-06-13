@@ -1,26 +1,25 @@
-const inputValues = {};
+const  user  = localStorage.getItem("user") ? JSON.parse(localStorage.getItem('user')).user : null
 
-export const stuffedCard = (input, urlAvatar, skills) => {
-  inputValues[input.name] = input.value;
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+export const stuffedCard = (input, skills) => {
+  user[input.name] = input.value;
 
   let body;
 
   body = {
-    name: inputValues.name || "",
-    lastName: inputValues.lastName || "",
-    email: inputValues.email || "",
-    work: inputValues.work || "",
-    country: inputValues.country || "",
-    photo: urlAvatar || "",
-    modality: inputValues.modality || "",
-    experience: inputValues.experience || "",
-    favorite: inputValues.favorite || "",
-    hasBadge: inputValues.hasBadge || "",
-    linkPortfolio: inputValues.linkPortfolio || "",
-    linkedin: inputValues.linkedin || "",
-    github: inputValues.github || "" ,
-    twitter: inputValues.twitter || "" ,
+    name: user.name || "",
+    lastName: user.lastName || "",
+    email: user.email || "",
+    work: user.work || "",
+    country: user.country || "",
+    photo: user.photo || '',
+    modality: user.modality || "",
+    experience: user.experience || "",
+    favorite: user.favorite || "",
+    hasBadge: user.hasBadge || "",
+    linkPortfolio: user.linkPortfolio || "",
+    linkedin: user.linkedin || "",
+    github: user.github || "" ,
+    twitter: user.twitter || "" ,
     skills: skills || [],
   };
 

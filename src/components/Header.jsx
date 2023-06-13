@@ -26,6 +26,7 @@ const Header = () => {
     window.localStorage.removeItem("url");
     setUrlAvatar(null);
     setUser(null);
+    navigate('/')
   };
 
   useEffect(() => {

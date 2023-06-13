@@ -8,24 +8,37 @@ import Avatar from "../components/Avatar";
 import { Person } from "../components/ListPersons";
 import { stuffedCard } from "../hooks/useStuffedCard";
 import SelectMultiple from "../components/SelectMultiple";
+import PopUp from "../components/PopUp";
+import { validation } from "../hooks/useValidation";
 
 const FormRepositorie = () => {
   const URL = import.meta.env.VITE_BACKEND_URL;
-  const {user} = JSON.parse(localStorage.getItem("user"));
-
+  const { user } = JSON.parse(localStorage.getItem("user"));
   const [formDataAvatar, setFormDataAvatar] = useState(null);
-  const [skills, setSkills] = useState(() => !user.skills ? [] : user.skills)
+  const [inputImage, setInputImage] = useState(null);
+  const [skills, setSkills] = useState(() => (!user.skills ? [] : user.skills));
   const [loading, setLoading] = useState(false);
-  const [body, setBody] = useState();
+  const [validations, setValidations] = useState();
+
+  const [body, setBody] = useState({
+    name: user.name ? user.name : "",
+    lastName: user.lastName ? user.lastName : "",
+    work: user.work ? user.work : "",
+    country: user.country ? user.country : "",
+    photo: user.photo ? user.photo : "",
+    modality: user.modality ? user.modality : "",
+    experience: user.experience ? user.experience : "",
+    favorite: user.favorite ? user.favorite : "",
+    hasBadge: user.hasBadge ? user.hasBadge : "",
+    portfolio: user.portfolio ? user.portfolio : "",
+    skills: user.skills ? user.skills : "",
+  });
   const id = user?._id;
   const token = user?.token;
-  const [urLocal, setUrlLocal] = useState(user?.photo)
-
-  console.log(user);
-
-  
-
-
+  const [urLocal, setUrlLocal] = useState(user?.photo);
+  const [notSubmitForValidation, setNotSubmitForValidation] = useState(false);
+  console.log(notSubmitForValidation);
+  console.log(urLocal);
 
   useEffect(() => {
     setBody((prev) => ({
@@ -40,19 +53,27 @@ const FormRepositorie = () => {
   };
 
   const handleChange = (e) => {
-    setBody(stuffedCard(e.target, urLocal, skills));
+    setBody(stuffedCard(e.target, skills));
   };
 
   useEffect(() => {
     setFormDataAvatar(document.getElementById("formAvatar"));
+    setInputImage(document.getElementById("image"));
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
-    const urlImage = await submitImage(formDataAvatar);
-    setUrlLocal(urlImage)
+    let urlImage;
+    if (inputImage.value) {
+      urlImage = await submitImage(formDataAvatar);
+      setUrlLocal(urlImage);
+    }
 
+    const validator = validation(body);
+    setValidations(validator);
+
+ 
 
     try {
       setLoading(true);
@@ -72,8 +93,11 @@ const FormRepositorie = () => {
           github: form.get("socialMediaGitHub"),
           twitter: form.get("socialMediaTwitter"),
         },
-        skills
+        skills,
       };
+      if (validator) {
+        throw new Error("error de validaciones");
+      }
 
       const response = await fetch(`${URL}/auth/repositories/${id}`, {
         method: "PATCH",
@@ -87,11 +111,14 @@ const FormRepositorie = () => {
       const updatedUserObject = { token, user: data.user };
 
       window.localStorage.setItem("user", JSON.stringify(updatedUserObject));
+      if (response.ok) {
+        //location.reload();
+      }
 
-      
       console.log(data);
     } catch (error) {
       console.log(error);
+      setNotSubmitForValidation(!notSubmitForValidation);
       setLoading(false);
     } finally {
       setLoading(false);
@@ -128,6 +155,7 @@ const FormRepositorie = () => {
                 type="text"
                 id="name"
                 name="name"
+                autoComplete="off"
                 maxLength={15}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               />
@@ -137,6 +165,7 @@ const FormRepositorie = () => {
                 className="block mb-3 text-sm font-medium text-victoria-textPrimary"
                 name="lastName"
                 maxLength={15}
+                autoComplete="off"
               >
                 Apellido
               </label>
@@ -144,6 +173,7 @@ const FormRepositorie = () => {
                 type="text"
                 name="lastName"
                 id="lastName"
+                autoComplete="off"
                 defaultValue={user.lastName}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               />
@@ -159,6 +189,7 @@ const FormRepositorie = () => {
               <select
                 defaultValue={user ? user.work : ""}
                 name="work"
+                autoComplete="off"
                 id="work"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
@@ -184,6 +215,7 @@ const FormRepositorie = () => {
               <select
                 name="country"
                 id="country"
+                autoComplete="off"
                 defaultValue={user ? user.country : ""}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
@@ -208,6 +240,7 @@ const FormRepositorie = () => {
               <select
                 name="modality"
                 id="modality"
+                autoComplete="off"
                 defaultValue={user ? user.modality : ""}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
@@ -232,6 +265,7 @@ const FormRepositorie = () => {
               <select
                 name="experience"
                 id="experience"
+                autoComplete="off"
                 defaultValue={user ? user.experience : ""}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               >
@@ -257,6 +291,7 @@ const FormRepositorie = () => {
                 type="text"
                 id="linkPortfolio"
                 name="linkPortfolio"
+                autoComplete="off"
                 defaultValue={user.portfolio}
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               />
@@ -273,6 +308,7 @@ const FormRepositorie = () => {
                 type="text"
                 id="socialMediaGitHub"
                 name="socialMediaGitHub"
+                autoComplete="off"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               />
             </div>
@@ -288,6 +324,7 @@ const FormRepositorie = () => {
                 type="text"
                 id="socialMediaLinkedin"
                 name="socialMediaLinkedin"
+                autoComplete="off"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               />
             </div>
@@ -303,12 +340,13 @@ const FormRepositorie = () => {
                 type="text"
                 id="socialMediaTwitter"
                 name="socialMediaTwitter"
+                autoComplete="off"
                 className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               />
             </div>
             <div className="col-span-full">
               <button
-                className="items-center justify-center w-full px-6 py-2.5 text-center text-victoria-textPrimary bg-victoria-buttonPrimary  rounded-full  hover:bg-victoria-buttonSecondary hover:border-victoria-buttonSecondary hover:text-black focus:outline-none focus-visible:outline-black text-sm focus-visible:ring-black"
+                className="items-center mt-4 justify-center flex w-full px-6 h-12 font-bold text-lg text-center text-victoria-textPrimary bg-victoria-buttonPrimary  rounded-full  hover:bg-victoria-buttonSecondary hover:border-victoria-buttonSecondary hover:text-black focus:outline-none focus-visible:outline-black  focus-visible:ring-black"
                 type="submit"
               >
                 {!loading ? "Guardar cambios" : "Cargando..."}
@@ -316,6 +354,9 @@ const FormRepositorie = () => {
             </div>
           </div>
         </form>
+        <PopUp button={"Aceptar"} display={notSubmitForValidation}>
+          <button onClick={() => console.log("hola")}>{validations}</button>
+        </PopUp>
       </div>
     </div>
   );

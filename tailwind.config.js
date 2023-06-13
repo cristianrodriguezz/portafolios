@@ -25,6 +25,7 @@ export default {
           important: "#93c5fd",
           transparent: "rgba(2,3,0,0.4)",
           error: "#d00000",
+          popup: "#2c3c4e"
         },
       },
     },

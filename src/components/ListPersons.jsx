@@ -7,7 +7,7 @@ export const Person = ({ person }) => {
   return (
     <li
       key={person?._id}
-      className="flex w-full text-victoria-textPrimary p-2 bg-background-200 justify-center  h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl  transition-all"
+      className="flex w-full mb-10 text-victoria-textPrimary p-2 bg-background-200 justify-center  h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl  transition-all"
     >
       <div className="flex flex-col w-full items-center justify-between text-center">
         <div className="border-b pb-2 w-full ">
@@ -16,7 +16,7 @@ export const Person = ({ person }) => {
             <label className="label" htmlFor={person?._id}>
               <img
                 key={person?._id}
-                src={person?.photo}
+                src={person?.photo ? person?.photo : 'https://res.cloudinary.com/dwy6oevco/image/upload/v1685696529/Images/adalczr51wmgdl1sshkz.png'}
                 alt={person?.name}
                 className="w-full h-full object-cover rounded-full border-2 border-victoria-buttonPrimary transition-all"
                 loading="lazy"

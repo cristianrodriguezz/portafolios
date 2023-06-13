@@ -50,7 +50,7 @@ export const Person = ({ person }) => {
         </div>
 
         <div>
-          <p className="break-words">Experiencia: {person?.experience}</p>
+          <p className="break-words">Exp: {person?.experience}</p>
           <p className="break-words w-52"> </p>
         </div>
         <div className="flex flex-col">
@@ -97,7 +97,7 @@ export const Person = ({ person }) => {
 
 const ListPersons = ({ persons }) => {
   return (
-    <ul className="w-full  gap-4 grid-cols-none sm:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20  xl:grid-cols-4 2xl:mr-60 2xl:ml-60 grid flex-row justify-center pt-8 pr-2 pl-2 sm:pr-4 text-victoria-bodyText ">
+    <ul className="gap-4  w-3/5 pr-2 pl-2 sm:grid sm:justify-center sm:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20 xl:grid-cols-4 2xl:mr-60 2xl:ml-60 pt-8  sm:pr-4 text-victoria-bodyText ">
       {persons?.map((person) => (
         <Person key={person?._id} person={person} />
       ))}

@@ -9,7 +9,7 @@ const Home = () => {
   const personsFiltered = filterPersons(persons.data)
 
   return (
-    <main className="h-full  text-white font-medium flex  w-full">
+    <main className="h-full  text-white font-medium flex  ">
       <Filters />
       {loading ? (
         <div>Cargando....</div>

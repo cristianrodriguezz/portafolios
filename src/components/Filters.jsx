@@ -43,7 +43,7 @@ const Filters = () => {
 
   return (
     <aside
-      className=" h-screen w-96 p-4 pt-8 sticky
+      className=" h-screen w-auto sm:w-48 p-4 pt-8 sticky
      top-0 left-0 break-words border-r"
     >
       <p className="text-center font-bold text-2xl">Filtros</p>

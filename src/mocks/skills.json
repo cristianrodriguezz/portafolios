@@ -3115,6 +3115,14 @@
   "label": "Xamarin",
   "skill_group": "Framework or Library",
   "skill_category": "Programming Languages & Distributions"
-  }
+  },
+  {
+    "id": 1074,
+    "value": "Apex",
+    "label": "Apex",
+    "skill_group": "Framework or Library",
+    "skill_category": "Programming Languages & Distributions"
+    }
+  
   ]
 }

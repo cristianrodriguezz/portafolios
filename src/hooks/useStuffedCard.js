@@ -1,6 +1,7 @@
+const  user  = localStorage.getItem("user") ? JSON.parse(localStorage.getItem('user')).user : null
 
 export const stuffedCard = (input, skills) => {
-  const  user  = localStorage.getItem("user") ? JSON.parse(localStorage.getItem('user')).user : null
+
   user[input.name] = input.value;
 
   let body;

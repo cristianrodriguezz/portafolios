@@ -71,9 +71,10 @@ const FormRepositorie = () => {
     }
 
     const validator = validation(body);
+    console.log(validator);
     setValidations(validator);
 
- 
+    console.log(body);
 
     try {
       setLoading(true);

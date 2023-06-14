@@ -5,7 +5,6 @@ import { validarImagen } from "../hooks/validarImage";
 const Avatar = ({ urlAvatar }) => {
   const { user } = JSON.parse(window.localStorage.getItem("user"));
   const [urlImages, setUrlImg] = useState(user?.photo );
-  console.log(user?.photo );
 
   const handleChange = (e) => {
     e.preventDefault();

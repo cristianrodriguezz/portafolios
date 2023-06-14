@@ -2,13 +2,18 @@
 .image-container input:checked ~ label > img {
   transform: scale(2,2);
   transition: all 500ms all;
-
 }
 /* Works on Firefox */
 #scroll-skill{
   scrollbar-width: 1px;          /* "auto" or "thin" */
   scrollbar-color: rgb(138, 138, 138) rgba(255, 166, 0, 0);   /* scroll thumb and track */
 }
+.filtersContainer input:checked + label + .aside{
+  transform: translateX(-50px);
+  background-color: aqua;
+  display: none;
+}
+
 
 
 /* Works on Chrome, Edge, and Safari */
@@ -44,4 +49,63 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(176, 92, 255);
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+#bar1,#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: .5s;
+  transform: rotate(180deg);
 }

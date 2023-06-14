@@ -2,10 +2,10 @@ import GitHub from "./icons/GitHub";
 import Linkedin from "./icons/Linkedin";
 import Twitter from "./icons/Twitter";
 
-export const Person = ({ person }) => {
+export const Person = ({ person}) => {
   return (
     <li
-      key={person?._id}
+    key={person._id}
       className="flex w-full mb-10 text-victoria-textPrimary p-2 bg-background-200 justify-center  h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl  transition-all"
     >
       <div className="flex flex-col w-full items-center justify-between text-center">
@@ -97,9 +97,10 @@ export const Person = ({ person }) => {
 
 const ListPersons = ({ persons }) => {
   return (
-    <ul className="gap-4  w-3/5 pr-2 pl-2 sm:grid sm:justify-center sm:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20 xl:grid-cols-4 2xl:mr-60 2xl:ml-60 pt-8  sm:pr-4 text-victoria-bodyText ">
+    <ul className="gap-4  w-3/5 m-auto pr-2 pl-2  sm:my-0   sm:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20 xl:grid-cols-4 2xl:mr-60 2xl:ml-60 pt-8   text-victoria-bodyText ">
       {persons?.map((person) => (
-        <Person key={person?._id} person={person} />
+        // eslint-disable-next-line react/jsx-key
+        <Person  person={person} />
       ))}
     </ul>
   );

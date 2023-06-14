@@ -1,6 +1,6 @@
 const Terminos = () => {
   return (
-    <div className="py-8 px-4 mx-80 bg-victoria-bgCardPrimary">
+    <div className="py-8 px-4  bg-victoria-bgCardPrimary md:mx-40 lg:mx-80">
       <h1 className="text-3xl font-bold mb-4">Términos y Condiciones</h1>
 
       <p className="mb-4">

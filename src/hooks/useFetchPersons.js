@@ -1,29 +1,34 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
+import { getPersons } from "../services/getPersons";
 
-
+const INITIAL_PAGE = 0
 export const useFetchPersons = () => {
-  
-  const URL = import.meta.env.VITE_BACKEND_URL;
-  const [persons, setPersons] = useState([])
-  const [loading, setLoading] = useState(true)
 
-  const getPersons = async () => {
-    try {
-      const response = await fetch(`${URL}/auth/repositories`);
-      const data = await response.json();
-      setPersons(data);
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    } finally {
-      setLoading(false);
-    }
-  }
+  const [persons, setPersons] = useState([])
+  const [loading, setLoading] = useState(false)
+  const [page, setPage] = useState(INITIAL_PAGE)
+  const [loadingNextPage, setLoadingNextPage] = useState(false)
 
   useEffect(() => {
+    setLoading(true)
     getPersons()
+    .then(res => res.json())
+    .then(data => setPersons(data.data.docs))
+    .catch(setLoading(false))
+    .finally(setLoading(false))
   }, [])
 
-  return {loading , persons }
+  useEffect(() => {
+    if(page === INITIAL_PAGE ) return
+    setLoadingNextPage(true)
+    getPersons(page)
+    .then(res => res.json())
+    .then(data =>{ 
+      setPersons(prev => prev.concat(data.data.docs))
+      setLoadingNextPage(false)
+    })
+  }, [page]);
+
+  return { loading , persons, loadingNextPage, setPage }
 };

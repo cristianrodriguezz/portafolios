@@ -119,7 +119,6 @@ const Header = () => {
       >
         INICIO
       </Link>
-
       {renderBoton()}
     </header>
   );

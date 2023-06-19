@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import PopUp from "../components/PopUp";
 import { Link } from "react-router-dom";
 import Loader from "../components/Loader";
+import { UserFavContext } from "../context/userFav";
 
 const FormLogin = () => {
   const URL = import.meta.env.VITE_BACKEND_URL;
@@ -9,6 +10,7 @@ const FormLogin = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [createOk, setCreateOk] = useState(false);
+  const {setUser} = useContext(UserFavContext)
 
   const handleSubmitLogin = async (e) => {
     e.preventDefault();
@@ -37,6 +39,7 @@ const FormLogin = () => {
       }
       if (response.ok) {
         window.localStorage.setItem("user", JSON.stringify(data.data));
+        setUser(data.data)
         setCreateOk(true);
       }
     } catch (error) {

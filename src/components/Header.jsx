@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const URL = import.meta.env.VITE_BACKEND_URL;
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   let location = useLocation();
   const [user, setUser] = useState(
     JSON.parse(window.localStorage.getItem("user"))
@@ -15,8 +15,8 @@ const Header = () => {
     if (user) {
       fetch(`${URL}/auth/repositorie/${user.user._id}`)
         .then((res) => res.json())
-        .then((data) =>{ 
-          setUrlAvatar(data.data[0].photo)
+        .then((data) => {
+          setUrlAvatar(data.data[0].photo);
         });
     }
   }, [user]);
@@ -26,7 +26,8 @@ const Header = () => {
     window.localStorage.removeItem("url");
     setUrlAvatar(null);
     setUser(null);
-    navigate('/')
+    navigate("/");
+    window.location.reload();
   };
 
   useEffect(() => {
@@ -38,7 +39,13 @@ const Header = () => {
       return (
         <div className="flex">
           <button
-            onClick={()=> navigate('/create')}
+            className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer mr-5"
+            onClick={() => navigate("/favorites")}
+          >
+            Favoritos
+          </button>
+          <button
+            onClick={() => navigate("/create")}
             className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer mr-5"
           >
             Perfil

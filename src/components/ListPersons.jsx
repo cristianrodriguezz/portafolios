@@ -1,14 +1,33 @@
+import { useContext } from "react";
+import {  useAddToFavorite } from "../hooks/useAddToFavorite";
 import GitHub from "./icons/GitHub";
 import Linkedin from "./icons/Linkedin";
 import Twitter from "./icons/Twitter";
+import { UserFavContext } from "../context/userFav";
+import Save from "./icons/Save";
 
 export const Person = ({ person}) => {
+  const {addFav,deleteFav, newFav} = useAddToFavorite()
+  const {favs,setFavs} = useContext(UserFavContext)
+
+  const isFaved = favs.some( fav => fav === person._id)
+
+  const handleClickFav = () => {
+    isFaved ? deleteFav(person._id) : addFav(person._id)
+    setFavs([...favs,newFav])
+  }
+
   return (
     <li
     key={person._id}
       className="flex w-full mb-10 text-victoria-textPrimary p-2 bg-background-200 justify-center  h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl  transition-all"
     >
+      
       <div className="flex flex-col w-full items-center justify-between text-center">
+        <div className="relative left-[44%] h-0">
+          {isFaved ? <Save color={'#FF0000'} onClick={handleClickFav}/> : <Save color={'#1f2937'} onClick={handleClickFav}/>}
+        </div>
+
         <div className="border-b pb-2 w-full ">
           <div className="w-24 h-24 m-auto image-container">
             <input type="checkbox" className="hidden" id={person?._id} />
@@ -90,17 +109,21 @@ export const Person = ({ person}) => {
             Ir al portafolio
           </a>
         ) : null}
+        
       </div>
+      
     </li>
   );
 };
 
 const ListPersons = ({ persons }) => {
+
+
   return (
     <ul className="gap-4  w-3/5 m-auto pr-2 pl-2  sm:my-0   sm:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20 xl:grid-cols-4 2xl:mr-60 2xl:ml-60 pt-8   text-victoria-bodyText ">
       {persons?.map((person) => (
         // eslint-disable-next-line react/jsx-key
-        <Person  person={person} />
+        <Person  person={person}  />
       ))}
     </ul>
   );

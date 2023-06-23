@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { getPerson } from "../services/getPerson";
 import { useEffect } from "react";
-import ListPersons, { Person } from "../components/ListPersons";
+import { Person } from "../components/ListPersons";
 
 const Favorites = () => {
   const [favorites, setFavorites] = useState([]);

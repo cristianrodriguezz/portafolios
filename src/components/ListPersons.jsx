@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import {  useAddToFavorite } from "../hooks/useAddToFavorite";
 import GitHub from "./icons/GitHub";
 import Linkedin from "./icons/Linkedin";
@@ -9,12 +9,18 @@ import Save from "./icons/Save";
 export const Person = ({ person}) => {
   const {addFav,deleteFav, newFav} = useAddToFavorite()
   const {favs,setFavs} = useContext(UserFavContext)
+  const [isFaved, setIsFaved] = useState()
 
-  const isFaved = favs.some( fav => fav === person._id)
+  // let isFaved = favs.some( fav => fav === person._id)
+
+  useEffect(() => {
+    setIsFaved(favs.some( fav => fav === person._id))
+  },[person]);
 
   const handleClickFav = () => {
     isFaved ? deleteFav(person._id) : addFav(person._id)
     setFavs([...favs,newFav])
+    setIsFaved(!isFaved)
   }
 
   return (

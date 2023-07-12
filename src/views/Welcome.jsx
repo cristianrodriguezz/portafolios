@@ -1,0 +1,32 @@
+import { useNavigate } from "react-router-dom"
+
+
+const Welcome = () => {
+  const navigate = useNavigate()
+  return (
+    
+
+  <section className="items-center justify-center bg-[#141521] flex min-h-screen">
+    <div className="relative items-center w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
+      <div className="max-w-3xl mx-auto text-center">
+        <div>
+          <span className="w-auto px-6 py-3 rounded-full bg-white/5  hover:cursor-pointer"  onClick={()=> navigate('/home')}><span className="tewxt-sm font-medium text-victoria-buttonPrimary">Explorá los perfiles</span></span>
+          <p className="mt-8 text-3xl font-extrabold tracking-tight text-white lg:text-6xl">
+          ¡Bienvenido a nuestra plataforma
+            <span className="md:block"> de reclutamiento en línea! </span>
+          </p>
+          <p className="max-w-xl mx-auto mt-8 text-base lg:text-xl text-slate-300">
+          Regístrate, crea tu perfil y permite que los reclutadores te encuentren.
+          </p>
+        </div>
+        <div className="flex flex-col justify-center max-w-sm gap-3 mx-auto mt-10 sm:flex-row">
+          <button onClick={()=> navigate('/signup')}  className="text-white focus:outline-none inline-flex items-center justify-center rounded-xl bg-victoria-buttonPrimary  duration-200 focus-visible:outline-black focus-visible:ring-black font-medium hover:bg-victoria-buttonSecondary hover:border-white hover:text-white lg:w-auto px-6 py-3 text-center w-full">Registrate gratis</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  )
+}
+
+export default Welcome

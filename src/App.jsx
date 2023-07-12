@@ -7,6 +7,7 @@ import FormLogin from "./views/FormLogin";
 import Register from "./views/Register";
 import Terminos from "./views/Terminos";
 import Favorites from "./views/Favorites";
+import Welcome from "./views/Welcome";
 
 
 
@@ -15,7 +16,8 @@ function App() {
 
       <Layout>
         <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/" exact element={<Welcome/>} />
+          <Route path="/home" exact element={<Home />} />
           <Route path="/create" exact element={<FormRepositorie />} />
           <Route path="/signup" exact element={<Register />} />
           <Route path="/signin" exact element={<FormLogin />} />

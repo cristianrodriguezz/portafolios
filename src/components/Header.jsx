@@ -44,12 +44,12 @@ const Header = () => {
           >
             Favoritos
           </button>
-          <button
-            onClick={() => navigate("/create")}
+          <a 
+            href="/create"
             className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer mr-5"
           >
             Perfil
-          </button>
+          </a>
           <div className="w-10 h-10 m-auto image-container">
             {!urlAvatar ? (
               <img

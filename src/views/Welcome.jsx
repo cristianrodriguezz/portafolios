@@ -6,7 +6,7 @@ const Welcome = () => {
   return (
     
 
-  <section className="items-center justify-center bg-[#141521] flex min-h-screen">
+  <section className="items-center justify-center bg-victoria-body flex min-h-screen">
     <div className="relative items-center w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
       <div className="max-w-3xl mx-auto text-center">
         <div>

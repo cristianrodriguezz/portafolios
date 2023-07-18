@@ -88,9 +88,9 @@ export const Person = ({ person}) => {
                 <GitHub />
               </a>
             ) : null}
-            {person?.social_media?.instagram ? (
+            {person?.social_media?.twitter ? (
               <a
-                href={person?.social_media?.instagram}
+                href={person?.social_media?.twitter}
                 className=" bg-victoria-bgCardSecondary hover:bg-victoria-buttonPrimary cursor-pointer w-10 h-10 rounded-full grid place-content-center"
               >
                 <Twitter />

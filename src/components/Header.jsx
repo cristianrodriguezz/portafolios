@@ -75,7 +75,7 @@ const Header = () => {
           </button>
         </div>
       );
-    } else if (location.pathname === "/") {
+    } else if (location.pathname === "/home" || location.pathname === "/") {
       return (
         <nav className="flex none list-none gap-5">
           <Link

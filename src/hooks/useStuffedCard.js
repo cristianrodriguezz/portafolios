@@ -22,6 +22,12 @@ export const stuffedCard = (input, skills) => {
     github: user.github || "" ,
     twitter: user.twitter || "" ,
     skills: skills || [],
+    portfolio: user.portfolio || "",
+    social_media: {
+      linkedin: user.social_media.linkedin || '' ,
+      git_hub: user.social_media.git_hub || '',
+      twitter: user.social_media.twitter || '',
+    },
   };
 
   return body;

@@ -3,13 +3,13 @@ export const validation = (body) => {
     return "Es necesario seleccionar las skills.";
   }
   if (!body.name) {
-    return "Es necesario un nombre.";
+    return "Es necesario seleccionar un nombre.";
   }
   if (!body.lastName) {
-    return "Es necesario un apellido.";
+    return "Es necesario seleccionar un apellido.";
   }
   if (!body.work) {
-    return "Es necesario un work.";
+    return "Es necesario seleccionar un rol.";
   }
   if (!body.country) {
     return "Es necesario seleccionar un país.";

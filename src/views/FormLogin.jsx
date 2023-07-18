@@ -92,7 +92,7 @@ const FormLogin = () => {
           </p>
         </form>
       </div>
-      <PopUp redirect={"/#"} display={createOk} button={"Aceptar"}>
+      <PopUp redirect={"/home"} display={createOk} button={"Aceptar"}>
         Inicio de sesión con éxito
       </PopUp>
     </div>

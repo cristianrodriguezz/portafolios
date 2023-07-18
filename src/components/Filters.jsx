@@ -1,4 +1,4 @@
-import { useContext, useId } from "react";
+import { useContext, useId, useRef } from "react";
 import { FiltersContext } from "../context/filters";
 import { countries } from "../mocks/countries.json";
 import { roles } from "../mocks/roles.json";
@@ -11,6 +11,8 @@ const Filters = () => {
   const idSelectExperience = useId();
   const idSelectModality = useId();
   const { setFilters } = useContext(FiltersContext);
+  const formRef = useRef();
+
 
   const handleChangeFiltersRol = (e) => {
     setFilters((prev) => ({
@@ -31,7 +33,9 @@ const Filters = () => {
       experience: e.target.value,
     }));
   };
-  const handleClickDisableFilters = () => {
+  const handleClickDisableFilters = (e) => {
+    e.preventDefault()
+    formRef.current.reset();
     setFilters({
       work: "all",
       country: "all",
@@ -48,7 +52,7 @@ const Filters = () => {
      top-0 left-0 break-words border-r aside"
       >
         <p className="text-center font-bold text-2xl">Filtros</p>
-        <div className="flex flex-col gap-5">
+        <form  ref={formRef} className="flex flex-col gap-5">
           <div>
             <label htmlFor={idSelectRol}>Rol</label>
             <select
@@ -58,6 +62,9 @@ const Filters = () => {
               className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               onChange={handleChangeFiltersRol}
             >
+              <option defaultValue="all" selected>
+                Todos
+              </option>
               {roles.map((role) => (
                 <option key={role} value={role}>
                   {role}
@@ -72,6 +79,9 @@ const Filters = () => {
               onChange={handleChangeFiltersCountry}
               id={idSelectCountry}
             >
+              <option defaultValue="all" selected>
+                Todos
+              </option>
               {countries.map((country) => (
                 <option key={country.name} value={country.name}>
                   {country.name}
@@ -86,6 +96,9 @@ const Filters = () => {
               className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               onChange={handleChangeFiltersExperience}
             >
+              <option defaultValue="none" selected>
+                Todos
+              </option>
               {experiences.map((experience) => (
                 <option key={experience.name} value={experience.name}>
                   {experience.name}
@@ -100,6 +113,9 @@ const Filters = () => {
               className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               onChange={handleChangeFiltersExperience}
             >
+              <option defaultValue="none" selected >
+                Todos
+              </option>
               {modalities.map((modality) => (
                 <option key={modality} value={modality}>
                   {modality}
@@ -107,8 +123,8 @@ const Filters = () => {
               ))}
             </select>
           </div>
-          <button onClick={handleClickDisableFilters}>Eliminar filtros</button>
-        </div>
+          <button className="bg-victoria-buttonPrimary rounded-md hover:bg-victoria-buttonSecondary" onClick={handleClickDisableFilters}>Eliminar filtros</button>
+        </form>
       </aside>
     </div>
   );

@@ -43,7 +43,7 @@ export const Person = ({ person}) => {
                 src={
                   person?.photo
                     ? person?.photo
-                    : "https://res.cloudinary.com/dwy6oevco/image/upload/v1685696529/Images/adalczr51wmgdl1sshkz.png"
+                    : `https://ui-avatars.com/api/?name=${person?.name}+${person?.lastName}&background=598EF3`
                 }
                 alt={person?.name}
                 className="w-full h-full object-cover rounded-full border-2 border-victoria-buttonPrimary transition-all"

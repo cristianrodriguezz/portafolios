@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import AvatarDropDown from "./AvatarDropDown";
 
 const Header = () => {
   const URL = import.meta.env.VITE_BACKEND_URL;
@@ -38,41 +39,13 @@ const Header = () => {
     if (user) {
       return (
         <div className="flex">
-          <button
-            className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer mr-5"
-            onClick={() => navigate("/favorites")}
-          >
-            Favoritos
-          </button>
-          <a 
-            href="/create"
-            className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer mr-5"
-          >
-            Perfil
-          </a>
-          <div className="w-10 h-10 m-auto image-container">
+          <div className="w-10 h-10 m-auto image-container mr-32">
             {!urlAvatar ? (
-              <img
-                src="https://res.cloudinary.com/dwy6oevco/image/upload/v1685696529/Images/adalczr51wmgdl1sshkz.png"
-                alt="adsfasd"
-                className="w-full h-full object-cover rounded-full border-2 border-victoria-buttonPrimary transition-all"
-                loading="lazy"
-              />
+              <AvatarDropDown signOut={handleClickSignOut} urlAvatar="https://res.cloudinary.com/dwy6oevco/image/upload/v1685696529/Images/adalczr51wmgdl1sshkz.png"/>
             ) : (
-              <img
-                src={urlAvatar}
-                alt="avatar"
-                className="w-full h-full object-cover rounded-full border-2 border-victoria-buttonPrimary transition-all"
-                loading="lazy"
-              />
+              <AvatarDropDown urlAvatar={urlAvatar} name={user.user.name} lastName={user.user.lastName} email={user.user.email} signOut={handleClickSignOut}/>
             )}
           </div>
-          <button
-            onClick={handleClickSignOut}
-            className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer"
-          >
-            Cerrar sesión
-          </button>
         </div>
       );
     } else if (location.pathname === "/home" || location.pathname === "/") {

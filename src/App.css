@@ -110,5 +110,9 @@
   transform: rotate(180deg);
 }
 
+.userAvatar + .checkUserDropDown:checked + #userDropdown {
+  visibility: hidden;
+}
+
 
 

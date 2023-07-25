@@ -1,54 +1,70 @@
 import { useContext, useEffect, useState } from "react";
-import {  useAddToFavorite } from "../hooks/useAddToFavorite";
+import { useAddToFavorite } from "../hooks/useAddToFavorite";
 import GitHub from "./icons/GitHub";
 import Linkedin from "./icons/Linkedin";
 import Twitter from "./icons/Twitter";
 import { UserFavContext } from "../context/userFav";
 import Save from "./icons/Save";
 
-export const Person = ({ person}) => {
-  const {addFav,deleteFav, newFav} = useAddToFavorite()
-  const {favs,setFavs} = useContext(UserFavContext)
-  const [isFaved, setIsFaved] = useState()
+export const Person = ({ person }) => {
+  const { addFav, deleteFav, newFav } = useAddToFavorite();
+  const { favs, setFavs } = useContext(UserFavContext);
+  const [isFaved, setIsFaved] = useState();
 
   // let isFaved = favs.some( fav => fav === person._id)
 
   useEffect(() => {
-    setIsFaved(favs.some( fav => fav === person._id))
-  },[person]);
+    setIsFaved(favs.some((fav) => fav === person._id));
+  }, [person]);
 
   const handleClickFav = () => {
-    isFaved ? deleteFav(person._id) : addFav(person._id)
-    setFavs([...favs,newFav])
-    setIsFaved(!isFaved)
-  }
+    isFaved ? deleteFav(person._id) : addFav(person._id);
+    setFavs([...favs, newFav]);
+    setIsFaved(!isFaved);
+  };
 
   return (
     <li
-    key={person._id}
-      className="flex w-full mb-10 text-victoria-textPrimary p-2 bg-background-200 justify-center  h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl  transition-all"
+      key={person._id}
+      className="flex w-full mb-10  text-victoria-textPrimary p-2 bg-background-200 justify-center h-96 shadow-pers rounded-xl bg-victoria-bgCardPrimary hover:shadow-2xl  transition-all"
     >
-      
       <div className="flex flex-col w-full items-center justify-between text-center">
         <div className="relative left-[44%] h-0">
-          {isFaved ? <Save color={'#FF0000'} onClick={handleClickFav}/> : <Save color={'#1f2937'} onClick={handleClickFav}/>}
+          {isFaved ? (
+            <Save color={"#FF0000"} onClick={handleClickFav} />
+          ) : (
+            <Save color={"#1f2937"} onClick={handleClickFav} />
+          )}
         </div>
 
         <div className="border-b pb-2 w-full ">
           <div className="w-24 h-24 m-auto image-container">
             <input type="checkbox" className="hidden" id={person?._id} />
             <label className="label" htmlFor={person?._id}>
-              <img
-                key={person?._id}
-                src={
-                  person?.photo
-                    ? person?.photo
-                    : `https://ui-avatars.com/api/?name=${person?.name}+${person?.lastName}&background=598EF3`
-                }
-                alt={person?.name}
-                className="w-full h-full object-cover rounded-full border-2 border-victoria-buttonPrimary transition-all"
-                loading="lazy"
-              />
+              {person?.photo ? (
+                <img
+                  key={person?._id}
+                  src={person?.photo}
+                  alt={person?.name}
+                  className="w-full h-full object-cover rounded-full border-2 border-victoria-buttonPrimary transition-all"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="relative w-full h-full overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                  <svg
+                    className="absolute w-24  h-28 text-gray-400 top-5 left-0 right-0 bottom-0 m-auto"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              )}
             </label>
           </div>
           <p className="pt-3 break-words w-11/12 m-auto font-extrabold text-xl font-leto text-center text-victoria-textPrimary">
@@ -115,21 +131,17 @@ export const Person = ({ person}) => {
             Ir al portafolio
           </a>
         ) : null}
-        
       </div>
-      
     </li>
   );
 };
 
 const ListPersons = ({ persons }) => {
-
-
   return (
     <ul className="gap-4  w-3/5 m-auto pr-2 pl-2  sm:my-0   sm:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20 xl:grid-cols-4 2xl:mr-60 2xl:ml-60 pt-8   text-victoria-bodyText ">
       {persons?.map((person) => (
         // eslint-disable-next-line react/jsx-key
-        <Person  person={person}  />
+        <Person person={person} />
       ))}
     </ul>
   );

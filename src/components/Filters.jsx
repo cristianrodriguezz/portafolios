@@ -46,7 +46,7 @@ const Filters = () => {
   };
 
   return (
-    <div className="filtersContainer  w-6/12  sm:w-1/3  lg:w-2/12">
+    <div className="filtersContainer  w-6/12  sm:w-1/3  lg:w-2/12 " >
       <aside
         className=" h-screen w-full  p-4 pt-8 sticky
      top-0 left-0 break-words border-r aside"
@@ -62,7 +62,7 @@ const Filters = () => {
               className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               onChange={handleChangeFiltersRol}
             >
-              <option defaultValue="all" selected>
+              <option  value={'all'} selected>
                 Todos
               </option>
               {roles.map((role) => (
@@ -79,7 +79,7 @@ const Filters = () => {
               onChange={handleChangeFiltersCountry}
               id={idSelectCountry}
             >
-              <option defaultValue="all" selected>
+              <option value={'all'} selected>
                 Todos
               </option>
               {countries.map((country) => (
@@ -96,7 +96,7 @@ const Filters = () => {
               className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               onChange={handleChangeFiltersExperience}
             >
-              <option defaultValue="none" selected>
+              <option  value={'none'} selected>
                 Todos
               </option>
               {experiences.map((experience) => (
@@ -113,7 +113,7 @@ const Filters = () => {
               className="border bg-victoria-bgCardSecondary border-victoria-bgCardPrimary text-victoria-textPrimary text-sm rounded-lg focus:ring-victoria-buttonPrimary focus:border-victoria-buttonPrimary block w-full p-2.5 "
               onChange={handleChangeFiltersExperience}
             >
-              <option defaultValue="none" selected >
+              <option   value={'none'} selected >
                 Todos
               </option>
               {modalities.map((modality) => (

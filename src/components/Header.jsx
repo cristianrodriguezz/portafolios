@@ -39,7 +39,7 @@ const Header = () => {
     if (user) {
       return (
         <div className="flex">
-          <div className="w-10 h-10 m-auto image-container mr-32">
+          <div className="w-10 h-10 m-auto image-container md:mr-32">
             {!urlAvatar ? (
               <AvatarDropDown signOut={handleClickSignOut} urlAvatar="https://res.cloudinary.com/dwy6oevco/image/upload/v1685696529/Images/adalczr51wmgdl1sshkz.png"/>
             ) : (

@@ -34,7 +34,7 @@ const AvatarDropDown = ({ urlAvatar, signOut, name, lastName, email }) => {
   
       <div
         id="userDropdown"
-        className="bg-white divide-y z-50 absolute top-14 divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+        className="bg-white divide-y z-50 absolute top-14 md:right-36 right-4 divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
       >
         <div className="px-4 py-3 text-sm text-gray-900 dark:text-white">
           <div>

@@ -22,8 +22,10 @@ const Welcome = () => {
         <div className="flex flex-col justify-center max-w-sm gap-3 mx-auto mt-10 sm:flex-row">
           <button onClick={()=> navigate('/signup')}  className="text-white focus:outline-none inline-flex items-center justify-center rounded-xl bg-victoria-buttonPrimary  duration-200 focus-visible:outline-black focus-visible:ring-black font-medium hover:bg-victoria-buttonSecondary hover:border-white hover:text-white lg:w-auto px-6 py-3 text-center w-full">Registrate gratis</button>
         </div>
+        
       </div>
     </div>
+    
   </section>
 
   )

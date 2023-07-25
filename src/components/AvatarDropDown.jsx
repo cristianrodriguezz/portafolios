@@ -12,14 +12,14 @@ const AvatarDropDown = ({ urlAvatar, signOut, name, lastName, email }) => {
     setShowTooltip(false);
   };
   return (
-    <div>
+    <div className="text-base font-medium">
       <label htmlFor="us" className="userAvatar">
         <img
           id="avatarButton"
           type="button"
           data-dropdown-toggle="userDropdown"
           data-dropdown-placement="bottom-start"
-          className="w-10 h-10 rounded-full cursor-pointer"
+          className="w-10 h-10 rounded-full cursor-pointer  object-cover "
           src={urlAvatar}
           alt="User dropdown"
         ></img>
@@ -31,10 +31,10 @@ const AvatarDropDown = ({ urlAvatar, signOut, name, lastName, email }) => {
         id="us"
         className="checkUserDropDown"
       />
-
+  
       <div
         id="userDropdown"
-        className="bg-white divide-y z-50 absolute  divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+        className="bg-white divide-y z-50 absolute top-14 divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
       >
         <div className="px-4 py-3 text-sm text-gray-900 dark:text-white">
           <div>
@@ -45,7 +45,7 @@ const AvatarDropDown = ({ urlAvatar, signOut, name, lastName, email }) => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <div className=" cursor-pointer truncate">{email}</div>
+            <div className=" cursor-pointer truncate text-gray-500 ">{email}</div>
             {showTooltip && (
               <div className="absolute right-1 top-9  bg-black text-white  text-xs">
                 {email}

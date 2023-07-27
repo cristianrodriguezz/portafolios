@@ -49,7 +49,7 @@ const Filters = () => {
     <div className="filtersContainer  pt-32 w-6/12  sm:w-1/3  lg:w-2/12 " >
       <aside
         className=" h-screen w-full  p-4 pt-8 sticky
-     top-0 left-0 break-words border-r aside"
+      top-20 left-0 break-words border-r aside"
       >
         <p className="text-center font-bold text-2xl">Filtros</p>
         <form  ref={formRef} className="flex flex-col gap-5">

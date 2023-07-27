@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import AvatarDropDown from "./AvatarDropDown";
+import logo from '../assets/connect--impact.png' 
 
 const Header = () => {
   const URL = import.meta.env.VITE_BACKEND_URL;
@@ -39,7 +40,7 @@ const Header = () => {
     if (user) {
       return (
         <div className="flex">
-          <div className="w-10 h-10 m-auto image-container md:mr-32">
+          <div className="w-10 h-10 m-auto image-container">
             {!urlAvatar ? (
               <AvatarDropDown signOut={handleClickSignOut} urlAvatar="https://res.cloudinary.com/dwy6oevco/image/upload/v1685696529/Images/adalczr51wmgdl1sshkz.png"/>
             ) : (
@@ -50,7 +51,7 @@ const Header = () => {
       );
     } else if (location.pathname === "/home" || location.pathname === "/") {
       return (
-        <nav className="flex none list-none gap-5">
+        <nav className="flex items-center justify-center none list-none gap-5">
           <Link
             className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer"
             to={"/signin"}
@@ -66,7 +67,7 @@ const Header = () => {
       );
     } else if (location.pathname === "/signin") {
       return (
-        <Link to={"/signup"}>
+        <Link to={"/signup"} className="flex justify-center items-center">
           <li className="pt-2 pb-2 pl-3 pr-3 rounded-lg text-white font-bold shadow-pers bg-victoria-buttonPrimary grid place-items-center cursor-pointer">
             Crear usuario
           </li>
@@ -84,20 +85,21 @@ const Header = () => {
     } else if (!user) {
       <Link
         to={"/"}
-        className="pt-2 pb-2 pl-3 pr-3 rounded-lg text-white font-bold shadow-pers bg-victoria-buttonPrimary grid place-items-center cursor-pointer"
+        className="pt-2 pb-2 pl-3 pr-3 rounded-lg text-white font-bold shadow-pers  grid place-items-center cursor-pointer"
       >
-        INICIO
+        
+        <img src={logo} alt="logo" /><span className="flex items-end justify-end text-victoria-buttonPrimary font-bold">BETA</span>
       </Link>;
     }
   };
 
   return (
-    <header className="p-2 bg-victoria-heading w-full flex justify-between sm:p-3 sm:pl-5 sm:pr-5 border-b border-victoria-bgCardPrimary">
+    <header className="bg-victoria-heading 2xl:px-72 xl:px-64 lg:px-20 md:px-10 px-4 py-4 z-20 fixed w-full top-0 flex justify-between  border-b border-victoria-bgCardPrimary">
       <Link
         to={"/"}
-        className="pt-2 pb-2 pl-3 pr-3 rounded-lg text-white font-bold shadow-pers bg-victoria-buttonPrimary grid place-items-center cursor-pointer"
+        className="w-24 cursor-pointer flex"
       >
-        INICIO
+        <img src={logo} alt="logo" /><span className="flex items-end justify-end text-victoria-buttonPrimary font-bold  text-xs">BETA</span>
       </Link>
       {renderBoton()}
     </header>

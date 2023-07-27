@@ -79,7 +79,7 @@ const Register = () => {
           handleSubmit,
           isSubmitting,
         }) => (
-          <div className="flex items-center justify-center  mx-2 mb-96  h-full lg:mx-28 xl:mx-72 gap-8 my-10 sm:mx-9 ">
+          <div className="flex items-center justify-center  mx-2 mb-96  mt-32  h-full lg:mx-28 xl:mx-72 gap-8 my-10 sm:mx-9 ">
             <div className=" w-96 pb-5 mb-14 bg-victoria-bgCardPrimary px-1 sm:px-10 sm:pb-5 rounded-lg shadow-pers ">
               <h2 className="text-4xl text-center m-3  text-victoria-textPrimary font-bold">
                 Crear usuario

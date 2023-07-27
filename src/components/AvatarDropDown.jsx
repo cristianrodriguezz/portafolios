@@ -12,7 +12,7 @@ const AvatarDropDown = ({ urlAvatar, signOut, name, lastName, email }) => {
     setShowTooltip(false);
   };
   return (
-    <div className="text-base font-medium">
+    <div className="text-base font-medium ">
       <label htmlFor="us" className="userAvatar">
         <img
           id="avatarButton"
@@ -34,7 +34,7 @@ const AvatarDropDown = ({ urlAvatar, signOut, name, lastName, email }) => {
   
       <div
         id="userDropdown"
-        className="bg-white divide-y z-50 absolute top-14 md:right-36 right-4 border-gray-600 border-2  divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+        className="bg-white divide-y z-50 absolute top-[4.5rem] xl:right-34 xl:right-72 lg:right-20 md:right-10 sm:right-5 right-5  border-gray-600 border-2  divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
       >
         <div className="px-4 py-3 text-sm text-gray-900 dark:text-white">
           <div>

@@ -132,7 +132,7 @@ const FormRepositorie = () => {
   };
 
   return (
-    <div className="flex mx-1 h-full lg:mx-28 xl:mx-52 gap-8 my-10 sm:mx-9 2xl:mx-80">
+    <div className="flex mx-1 h-full lg:mx-28 xl:mx-52 gap-8 my-10  mt-32 sm:mx-9 2xl:mx-80">
       <div className="w-64 h-96 hidden sm:flex sticky top-9">
         <Person person={body} />
       </div>

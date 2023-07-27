@@ -47,9 +47,9 @@ const Favorites = () => {
   };
 
   return (
-    <div>
+    <div className="mt-32">
       {loading ? (
-        <div className="h-screen grid place-content-center">
+        <div className="h-screen  grid place-content-center">
           <div className="loader "></div>
         </div>
       ) : persons.length === 0 ? (

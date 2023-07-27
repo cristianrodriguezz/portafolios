@@ -51,15 +51,15 @@ const Header = () => {
       );
     } else if (location.pathname === "/home" || location.pathname === "/") {
       return (
-        <nav className="flex items-center justify-center none list-none gap-5">
+        <nav className="flex items-center justify-center none list-none sm:gap-5">
           <Link
-            className="pt-2 pb-2 pl-3 pr-3 text-white font-bold grid place-items-center cursor-pointer"
+            className="pt-2 pb-2 pl-3 pr-3 text-xs sm:text-base  text-white font-bold grid place-items-center cursor-pointer"
             to={"/signin"}
           >
             Iniciar sesión
           </Link>
           <Link to={"/signup"}>
-            <li className="pt-2 pb-2 pl-3 pr-3 rounded-lg text-white font-bold shadow-pers bg-victoria-buttonPrimary grid place-items-center cursor-pointer">
+            <li className="pt-2 pb-2 pl-3 pr-3 text-xs sm:text-base rounded-lg text-white font-bold shadow-pers bg-victoria-buttonPrimary grid place-items-center cursor-pointer">
               Crear usuario
             </li>
           </Link>
@@ -94,7 +94,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-victoria-heading 2xl:px-72 xl:px-64 lg:px-20 md:px-10 px-4 py-4 z-20 fixed w-full top-0 flex justify-between  border-b border-victoria-bgCardPrimary">
+    <header className="bg-victoria-heading 2xl:px-72 xl:px-64 lg:px-20 md:px-10 px-1 py-4 z-20 fixed w-full top-0 flex justify-between  border-b border-victoria-bgCardPrimary">
       <Link
         to={"/"}
         className="w-24 cursor-pointer flex"

@@ -13,10 +13,10 @@ const Welcome = () => {
           <div className="max-w-3xl mx-auto text-center">
             <div>
               <span
-                className="w-auto px-6 py-3 rounded-full bg-white/5  hover:cursor-pointer"
+                className="w-auto px-6 py-3 rounded-full  bg-victoria-bgCardSecondary  hover:cursor-pointer"
                 onClick={() => navigate("/home")}
               >
-                <span className="tewxt-sm font-medium text-victoria-buttonPrimary">
+                <span className="tewxt-sm font-medium text-white">
                   Explorá los perfiles
                 </span>
               </span>

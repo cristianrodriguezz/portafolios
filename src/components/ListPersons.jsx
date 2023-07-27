@@ -138,7 +138,7 @@ export const Person = ({ person }) => {
 
 const ListPersons = ({ persons }) => {
   return (
-    <ul className="gap-4 pt-32   w-3/5 m-auto pr-2 pl-2  sm:my-0   sm:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20 xl:grid-cols-4 2xl:mr-60 2xl:ml-60 pt-8   text-victoria-bodyText ">
+    <ul className="gap-4 pt-32   w-3/5 m-auto pr-2 pl-2  sm:my-0   sm:grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 lg:ml-20 lg:mr-20 xl:grid-cols-4 2xl:mr-60 2xl:ml-60   text-victoria-bodyText ">
       {persons?.map((person) => (
         // eslint-disable-next-line react/jsx-key
         <Person person={person} />

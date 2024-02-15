@@ -14,23 +14,23 @@ Te invito a que te crees un usuario y contraseña y crees tu perfil subiendo tu 
 
 Este proyecto fue desarrollado utilizando las siguientes tecnologías:
 
-Frontend:
+## Frontend
 - React js
-Backend
+## Backend
 - Node js
-Base de datos
+## Base de datos
 - MongoDB
 - Cloudinary
 
 
 Y las siguientes librerías:
 
-Frontend
+## Frontend
 - react-router-dom
 - formik
 - react-select
 - react-intersection-observer
-Backend
+## Backend
 - bcryptjs
 - cors
 - dotenv

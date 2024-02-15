@@ -23,7 +23,7 @@ Te invito a que te crees un usuario y contraseña y crees tu perfil subiendo tu 
 - Cloudinary
 
 
-### Y las siguientes librerías:
+## Y las siguientes librerías:
 
 #### Frontend
 - react-router-dom

@@ -25,12 +25,12 @@ Este proyecto fue desarrollado utilizando las siguientes tecnologías:
 
 Y las siguientes librerías:
 
-### Frontend
+##### Frontend
 - react-router-dom
 - formik
 - react-select
 - react-intersection-observer
-### Backend
+#### Backend
 - bcryptjs
 - cors
 - dotenv
